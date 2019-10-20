@@ -33,6 +33,10 @@ namespace HYHISAPPS.Models.Util
             operate.Dispose();
         }
 
+        public void test()
+        { 
+        
+        }
        
 
 

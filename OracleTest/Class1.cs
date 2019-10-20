@@ -45,7 +45,7 @@ namespace OracleTest
             req.ContentType = "application/json";
 
             #region 添加Post 参数
-            byte[] data = Encoding.UTF8.GetBytes(strJson);
+            byte[] data = Encoding.UTF8.GetBytes(strJson);   
             req.ContentLength = data.Length;
             using (Stream reqStream = req.GetRequestStream())
             {
