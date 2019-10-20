@@ -36,7 +36,11 @@ namespace HYHISAPPS.Models.Util
 
         public void test()
         {
- MessageBox.Show("34");
+<<<<<<< HEAD
+            MessageBox.Show("sss1235");
+=======
+            MessageBox.Show("sss1232");
+>>>>>>> 213a00bac5202ca3478c63c21b962caf76397e3b
         }
        
 

@@ -80,7 +80,7 @@ namespace OracleTest
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";
 
-            //设置代理UserAgent和超时
+            //设置代理UserAgent和超时11
             //request.UserAgent = userAgent;
             //request.Timeout = timeout; 
 
