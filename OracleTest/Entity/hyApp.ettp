@@ -1,0 +1,574 @@
+<EtpConfig Name="GYD_XMLCREATOR">
+  <Setting>
+    <DBType>Oracle</DBType>
+    <ConnectionString>User ID=pub;Data Source=192.168.254.87/kfhyhis;Password=pub</ConnectionString>
+    <BaseLibName>hyApp</BaseLibName>
+    <CodePath>H:\HY-HIS\HYHIS\HYHISAPPS\HYHISAPPS\Entity</CodePath>
+    <IsSigned>False</IsSigned>
+    <LanFlag>0</LanFlag>
+    <EntityFilePath />
+    <ProviderLibName>Oracle.ODP</ProviderLibName>
+    <CreatedTime>2019-02-19 11:37:16</CreatedTime>
+    <LastModifiedTime>2019-07-31 09:01:42</LastModifiedTime>
+    <ModifiedCount>7</ModifiedCount>
+  </Setting>
+  <Entity>
+    <EntityTypeName>DEPARTINTRODUCTION</EntityTypeName>
+    <MainTable>
+      <TableName>YWAPP.DEPART_INTRODUCTION</TableName>
+      <Columns>
+        <Column Name="ID" DataType="System.String" Length="36" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VDEPARTMENTCODE" DataType="System.String" Length="36" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="INTRODUCTION" DataType="System.String" Length="200" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="REMARKS" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ISENABLE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="PHOTO" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertYWAPP.DEPART_INTRODUCTION">
+        <String>INSERT INTO YWAPP.DEPART_INTRODUCTION
+ (ID, VDEPARTMENTCODE, INTRODUCTION, REMARKS, ISENABLE, PHOTO)
+ VALUES
+(:ID, :VDEPARTMENTCODE, :INTRODUCTION, :REMARKS, :ISENABLE, :PHOTO)</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VDEPARTMENTCODE" Column="VDEPARTMENTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="INTRODUCTION" Column="INTRODUCTION" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteYWAPP.DEPART_INTRODUCTION">
+        <String>DELETE FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.DEPART_INTRODUCTION">
+        <String>UPDATE YWAPP.DEPART_INTRODUCTION
+ SET
+ ID = :ID, VDEPARTMENTCODE = :VDEPARTMENTCODE, INTRODUCTION = :INTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, PHOTO = :PHOTO 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VDEPARTMENTCODE" Column="VDEPARTMENTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="INTRODUCTION" Column="INTRODUCTION" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDYWAPP.DEPART_INTRODUCTION">
+        <String>SELECT ID, VDEPARTMENTCODE, INTRODUCTION, REMARKS, ISENABLE, PHOTO
+ FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT ID, VDEPARTMENTCODE, INTRODUCTION, REMARKS, ISENABLE, PHOTO
+ FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo />
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDYWAPP.DEPART_INTRODUCTION">
+        <String>SELECT ID, VDEPARTMENTCODE, INTRODUCTION, REMARKS, ISENABLE, PHOTO
+ FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT ID, VDEPARTMENTCODE, INTRODUCTION, REMARKS, ISENABLE, PHOTO
+ FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteYWAPP.DEPART_INTRODUCTION">
+        <String>DELETE FROM YWAPP.DEPART_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.DEPART_INTRODUCTION">
+        <String>UPDATE YWAPP.DEPART_INTRODUCTION
+ SET
+ ID = :ID, VDEPARTMENTCODE = :VDEPARTMENTCODE, INTRODUCTION = :INTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, PHOTO = :PHOTO 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VDEPARTMENTCODE" Column="VDEPARTMENTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="INTRODUCTION" Column="INTRODUCTION" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>DOCTORINTRODUCTION</EntityTypeName>
+    <MainTable>
+      <TableName>YWAPP.DOCTOR_INTRODUCTION</TableName>
+      <Columns>
+        <Column Name="VGOODAT" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ID" DataType="System.String" Length="36" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VSTAFFCODE" DataType="System.String" Length="36" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DOCTORINTRODUCTION" DataType="System.String" Length="500" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="REMARKS" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ISENABLE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="SPECIALTY" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="POSITION" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PHOTO" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPARTCODE" DataType="System.String" Length="36" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+      <TableMemo>
+      </TableMemo>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertYWAPP.DOCTOR_INTRODUCTION">
+        <String>INSERT INTO YWAPP.DOCTOR_INTRODUCTION
+ (VGOODAT, ID, VSTAFFCODE, DOCTORINTRODUCTION, REMARKS, ISENABLE, SPECIALTY, POSITION, PHOTO, VDEPARTCODE)
+ VALUES
+(:VGOODAT, :ID, :VSTAFFCODE, :DOCTORINTRODUCTION, :REMARKS, :ISENABLE, :SPECIALTY, :POSITION, :PHOTO, :VDEPARTCODE)</String>
+        <Param Name="VGOODAT" Column="VGOODAT" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DOCTORINTRODUCTION" Column="DOCTORINTRODUCTION" DataType="OracleType.VarChar" Length="500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="SPECIALTY" Column="SPECIALTY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="POSITION" Column="POSITION" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteYWAPP.DOCTOR_INTRODUCTION">
+        <String>DELETE FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.DOCTOR_INTRODUCTION">
+        <String>UPDATE YWAPP.DOCTOR_INTRODUCTION
+ SET
+ VGOODAT = :VGOODAT, ID = :ID, VSTAFFCODE = :VSTAFFCODE, DOCTORINTRODUCTION = :DOCTORINTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, SPECIALTY = :SPECIALTY, POSITION = :POSITION, PHOTO = :PHOTO, VDEPARTCODE = :VDEPARTCODE 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="VGOODAT" Column="VGOODAT" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DOCTORINTRODUCTION" Column="DOCTORINTRODUCTION" DataType="OracleType.VarChar" Length="500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="SPECIALTY" Column="SPECIALTY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="POSITION" Column="POSITION" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDYWAPP.DOCTOR_INTRODUCTION">
+        <String>SELECT VGOODAT, ID, VSTAFFCODE, DOCTORINTRODUCTION, REMARKS, ISENABLE, SPECIALTY, POSITION, PHOTO, VDEPARTCODE
+ FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectALl">
+        <String>SELECT ID, VSTAFFCODE, DOCTORINTRODUCTION, REMARKS, ISENABLE, SPECIALTY, POSITION, PHOTO, VDEPARTCODE
+ FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo />
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDYWAPP.DOCTOR_INTRODUCTION">
+        <String>SELECT VGOODAT, ID, VSTAFFCODE, DOCTORINTRODUCTION, REMARKS, ISENABLE, SPECIALTY, POSITION, PHOTO, VDEPARTCODE
+ FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectALl">
+        <String>SELECT ID, VSTAFFCODE, DOCTORINTRODUCTION, REMARKS, ISENABLE, SPECIALTY, POSITION, PHOTO, VDEPARTCODE
+ FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteYWAPP.DOCTOR_INTRODUCTION">
+        <String>DELETE FROM YWAPP.DOCTOR_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.DOCTOR_INTRODUCTION">
+        <String>UPDATE YWAPP.DOCTOR_INTRODUCTION
+ SET
+ VGOODAT = :VGOODAT, ID = :ID, VSTAFFCODE = :VSTAFFCODE, DOCTORINTRODUCTION = :DOCTORINTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, SPECIALTY = :SPECIALTY, POSITION = :POSITION, PHOTO = :PHOTO, VDEPARTCODE = :VDEPARTCODE 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="VGOODAT" Column="VGOODAT" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DOCTORINTRODUCTION" Column="DOCTORINTRODUCTION" DataType="OracleType.VarChar" Length="500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="SPECIALTY" Column="SPECIALTY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="POSITION" Column="POSITION" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>HOSPITALINTRODUCTION</EntityTypeName>
+    <MainTable>
+      <TableName>YWAPP.HOSPITAL_INTRODUCTION</TableName>
+      <Columns>
+        <Column Name="ID" DataType="System.String" Length="36" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="HOSPITALNAME" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="HOSPITALADDRESS" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="HOSPITALTEL" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="HOSPITALINTRODUCTION" DataType="System.String" Length="1500" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="REMARKS" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ISENABLE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="PHOTO" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PHOTO1" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PHOTO2" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="HOSPITALID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertYWAPP.HOSPITAL_INTRODUCTION">
+        <String>INSERT INTO YWAPP.HOSPITAL_INTRODUCTION
+ (ID, HOSPITALNAME, HOSPITALADDRESS, HOSPITALTEL, HOSPITALINTRODUCTION, REMARKS, ISENABLE, PHOTO, PHOTO1, PHOTO2, HOSPITALID)
+ VALUES
+(:ID, :HOSPITALNAME, :HOSPITALADDRESS, :HOSPITALTEL, :HOSPITALINTRODUCTION, :REMARKS, :ISENABLE, :PHOTO, :PHOTO1, :PHOTO2, :HOSPITALID)</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="HOSPITALNAME" Column="HOSPITALNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="HOSPITALADDRESS" Column="HOSPITALADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="HOSPITALTEL" Column="HOSPITALTEL" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="HOSPITALINTRODUCTION" Column="HOSPITALINTRODUCTION" DataType="OracleType.NVarChar" Length="1500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO1" Column="PHOTO1" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO2" Column="PHOTO2" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteYWAPP.HOSPITAL_INTRODUCTION">
+        <String>DELETE FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.HOSPITAL_INTRODUCTION">
+        <String>UPDATE YWAPP.HOSPITAL_INTRODUCTION
+ SET
+ ID = :ID, HOSPITALNAME = :HOSPITALNAME, HOSPITALADDRESS = :HOSPITALADDRESS, HOSPITALTEL = :HOSPITALTEL, HOSPITALINTRODUCTION = :HOSPITALINTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, PHOTO = :PHOTO, PHOTO1 = :PHOTO1, PHOTO2 = :PHOTO2, HOSPITALID = :HOSPITALID 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="HOSPITALNAME" Column="HOSPITALNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="HOSPITALADDRESS" Column="HOSPITALADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="HOSPITALTEL" Column="HOSPITALTEL" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="HOSPITALINTRODUCTION" Column="HOSPITALINTRODUCTION" DataType="OracleType.NVarChar" Length="1500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO1" Column="PHOTO1" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO2" Column="PHOTO2" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDYWAPP.HOSPITAL_INTRODUCTION">
+        <String>SELECT ID, HOSPITALNAME, HOSPITALADDRESS, HOSPITALTEL, HOSPITALINTRODUCTION, REMARKS, ISENABLE, PHOTO, PHOTO1, PHOTO2, HOSPITALID
+ FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT ID, HOSPITALNAME, HOSPITALADDRESS, HOSPITALTEL, HOSPITALINTRODUCTION, REMARKS, ISENABLE, PHOTO, PHOTO1, PHOTO2, HOSPITALID
+ FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo />
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDYWAPP.HOSPITAL_INTRODUCTION">
+        <String>SELECT ID, HOSPITALNAME, HOSPITALADDRESS, HOSPITALTEL, HOSPITALINTRODUCTION, REMARKS, ISENABLE, PHOTO, PHOTO1, PHOTO2, HOSPITALID
+ FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT ID, HOSPITALNAME, HOSPITALADDRESS, HOSPITALTEL, HOSPITALINTRODUCTION, REMARKS, ISENABLE, PHOTO, PHOTO1, PHOTO2, HOSPITALID
+ FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteYWAPP.HOSPITAL_INTRODUCTION">
+        <String>DELETE FROM YWAPP.HOSPITAL_INTRODUCTION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.HOSPITAL_INTRODUCTION">
+        <String>UPDATE YWAPP.HOSPITAL_INTRODUCTION
+ SET
+ ID = :ID, HOSPITALNAME = :HOSPITALNAME, HOSPITALADDRESS = :HOSPITALADDRESS, HOSPITALTEL = :HOSPITALTEL, HOSPITALINTRODUCTION = :HOSPITALINTRODUCTION, REMARKS = :REMARKS, ISENABLE = :ISENABLE, PHOTO = :PHOTO, PHOTO1 = :PHOTO1, PHOTO2 = :PHOTO2, HOSPITALID = :HOSPITALID 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="HOSPITALNAME" Column="HOSPITALNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="HOSPITALADDRESS" Column="HOSPITALADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="HOSPITALTEL" Column="HOSPITALTEL" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="HOSPITALINTRODUCTION" Column="HOSPITALINTRODUCTION" DataType="OracleType.NVarChar" Length="1500" Dir="IN" />
+        <Param Name="REMARKS" Column="REMARKS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="ISENABLE" Column="ISENABLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PHOTO" Column="PHOTO" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO1" Column="PHOTO1" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="PHOTO2" Column="PHOTO2" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>IN_NAVIGATION</EntityTypeName>
+    <MainTable>
+      <TableName>YWAPP.INHOSPITAL_NAVIGATION</TableName>
+      <Columns>
+        <Column Name="HOSPITALID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ID" DataType="System.String" Length="36" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="FLOORNAME" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="FLOORMAP" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertYWAPP.INHOSPITAL_NAVIGATION">
+        <String>INSERT INTO YWAPP.INHOSPITAL_NAVIGATION
+ (HOSPITALID, ID, FLOORNAME, FLOORMAP)
+ VALUES
+(:HOSPITALID, :ID, :FLOORNAME, :FLOORMAP)</String>
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNAME" Column="FLOORNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORMAP" Column="FLOORMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteYWAPP.INHOSPITAL_NAVIGATION">
+        <String>DELETE FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.INHOSPITAL_NAVIGATION">
+        <String>UPDATE YWAPP.INHOSPITAL_NAVIGATION
+ SET
+ HOSPITALID = :HOSPITALID, ID = :ID, FLOORNAME = :FLOORNAME, FLOORMAP = :FLOORMAP 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNAME" Column="FLOORNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORMAP" Column="FLOORMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDYWAPP.INHOSPITAL_NAVIGATION">
+        <String>SELECT HOSPITALID, ID, FLOORNAME, FLOORMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT HOSPITALID, ID, FLOORNAME, FLOORMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE 1=1</String>
+        <SqlMemo />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo />
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDYWAPP.INHOSPITAL_NAVIGATION">
+        <String>SELECT HOSPITALID, ID, FLOORNAME, FLOORMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT HOSPITALID, ID, FLOORNAME, FLOORMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE 1=1</String>
+        <SqlMemo />
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteYWAPP.INHOSPITAL_NAVIGATION">
+        <String>DELETE FROM YWAPP.INHOSPITAL_NAVIGATION
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.INHOSPITAL_NAVIGATION">
+        <String>UPDATE YWAPP.INHOSPITAL_NAVIGATION
+ SET
+ HOSPITALID = :HOSPITALID, ID = :ID, FLOORNAME = :FLOORNAME, FLOORMAP = :FLOORMAP 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="HOSPITALID" Column="HOSPITALID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNAME" Column="FLOORNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORMAP" Column="FLOORMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>IN_NAVIGATION_DETAILS</EntityTypeName>
+    <MainTable>
+      <TableName>YWAPP.INHOSPITAL_NAVIGATION_DETAIL</TableName>
+      <Columns>
+        <Column Name="INID" DataType="System.String" Length="36" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="ID" DataType="System.String" Length="36" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="FLOORNUM" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DEPARTCODE" DataType="System.String" Length="36" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DEPARTNAME" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="FLOORNUMMAP" DataType="System.Byte[]" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>INSERT INTO YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ (INID, ID, FLOORNUM, DEPARTCODE, DEPARTNAME, FLOORNUMMAP)
+ VALUES
+(:INID, :ID, :FLOORNUM, :DEPARTCODE, :DEPARTNAME, :FLOORNUMMAP)</String>
+        <Param Name="INID" Column="INID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNUM" Column="FLOORNUM" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DEPARTCODE" Column="DEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DEPARTNAME" Column="DEPARTNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORNUMMAP" Column="FLOORNUMMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>DELETE FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>UPDATE YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ SET
+ INID = :INID, ID = :ID, FLOORNUM = :FLOORNUM, DEPARTCODE = :DEPARTCODE, DEPARTNAME = :DEPARTNAME, FLOORNUMMAP = :FLOORNUMMAP 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="INID" Column="INID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNUM" Column="FLOORNUM" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DEPARTCODE" Column="DEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DEPARTNAME" Column="DEPARTNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORNUMMAP" Column="FLOORNUMMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>SELECT INID, ID, FLOORNUM, DEPARTCODE, DEPARTNAME, FLOORNUMMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT INID, ID, FLOORNUM, DEPARTCODE, DEPARTNAME, FLOORNUMMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE 1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo />
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>SELECT INID, ID, FLOORNUM, DEPARTCODE, DEPARTNAME, FLOORNUMMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT INID, ID, FLOORNUM, DEPARTCODE, DEPARTNAME, FLOORNUMMAP
+ FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE 1=1
+</String>
+        <SqlMemo />
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>DELETE FROM YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ WHERE
+ ID = :ID</String>
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateYWAPP.INHOSPITAL_NAVIGATION_DETAIL">
+        <String>UPDATE YWAPP.INHOSPITAL_NAVIGATION_DETAIL
+ SET
+ INID = :INID, ID = :ID, FLOORNUM = :FLOORNUM, DEPARTCODE = :DEPARTCODE, DEPARTNAME = :DEPARTNAME, FLOORNUMMAP = :FLOORNUMMAP 
+ WHERE
+ ID = :OLDID</String>
+        <Param Name="INID" Column="INID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="ID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="FLOORNUM" Column="FLOORNUM" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DEPARTCODE" Column="DEPARTCODE" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+        <Param Name="DEPARTNAME" Column="DEPARTNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="FLOORNUMMAP" Column="FLOORNUMMAP" DataType="OracleType.Blob" Length="-1" Dir="IN" />
+        <Param Name="OLDID" Column="ID" DataType="OracleType.VarChar" Length="36" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+</EtpConfig>

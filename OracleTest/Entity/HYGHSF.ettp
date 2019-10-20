@@ -1,0 +1,1872 @@
+<EtpConfig Name="GYD_XMLCREATOR">
+  <Setting>
+    <DBType>Oracle</DBType>
+    <ConnectionString>User ID=ywapp;Data Source=192.168.254.87/kfhyhis;Password=ywapp</ConnectionString>
+    <BaseLibName>HYGHSF</BaseLibName>
+    <CodePath>E:\HYHIS\HYHISAPPS\HYHISAPPS\Entity</CodePath>
+    <IsSigned>False</IsSigned>
+    <LanFlag>0</LanFlag>
+    <EntityFilePath />
+    <ProviderLibName>Oracle.ODP</ProviderLibName>
+    <CreatedTime>2019-02-20 09:40:59</CreatedTime>
+    <LastModifiedTime>2019-03-13 11:47:29</LastModifiedTime>
+    <ModifiedCount>35</ModifiedCount>
+  </Setting>
+  <Entity>
+    <EntityTypeName>GHSF_PATIENTINFO</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_PATIENTINFO</TableName>
+      <Columns>
+        <Column Name="VPATIENTID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="DCREATEDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VNAME" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="PINYINMA" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="WUBIMA" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSEX" DataType="System.Int16" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="DBIRTHDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VBIRTHPLACE" DataType="System.String" Length="6" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VBIRTHPLACEDETAIL" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNATION" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNATIONNAME" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VIDTYPE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VIDNO" DataType="System.String" Length="18" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VUNITINCONTRACT" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VUNITINCONTRACTNAME" DataType="System.String" Length="200" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VMAILINGADDRESS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VZIPID" DataType="System.String" Length="6" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPHONENUMBERHOME" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPHONENUMBERBUSINESS" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VLINKMAN" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VRELATIONSHIP" DataType="System.String" Length="2" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNEXTOFKINADDR" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNEXTOFKINZIPID" DataType="System.String" Length="6" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPHONE" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DLASTVISITDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NVIPINDICATOR" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEGREE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VRACE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VRELIGION" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VMOTHERLANGUAGE" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VFOREIGNLANGUAGE" DataType="System.String" Length="16" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VVIPNO" DataType="System.String" Length="18" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VENGLISHNAME" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCOUNTRY" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPROVINCES" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCITY" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSTREET" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPROFESSIONID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NIDENTITY" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRESENTADDRESS" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VISITNO" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NMARRY" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VORGAN" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDICAREAID" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDIAGNOSE" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDISEASEID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NZYZEXZ" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NZYYPXZ" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_PATIENTINFO">
+        <String>INSERT INTO GHSF.GHSF_PATIENTINFO
+ (VPATIENTID, DCREATEDATE, VNAME, PINYINMA, WUBIMA, NSEX, DBIRTHDATE, VBIRTHPLACE, VBIRTHPLACEDETAIL, VNATION, VNATIONNAME, VIDTYPE, VIDNO, VUNITINCONTRACT, VUNITINCONTRACTNAME, VMAILINGADDRESS, VZIPID, VPHONENUMBERHOME, VPHONENUMBERBUSINESS, VLINKMAN, VRELATIONSHIP, VNEXTOFKINADDR, VNEXTOFKINZIPID, VPHONE, DLASTVISITDATE, NVIPINDICATOR, VOPERATORID, VDEGREE, VRACE, VRELIGION, VMOTHERLANGUAGE, VFOREIGNLANGUAGE, VVIPNO, VENGLISHNAME, VREMARKS, NCOUNTRY, NPROVINCES, NCITY, NSTREET, NPROFESSIONID, NIDENTITY, VPRESENTADDRESS, VISITNO, NMARRY, VORGAN, NDICAREAID, VDIAGNOSE, NDISEASEID, NZYZEXZ, NZYYPXZ)
+ VALUES
+(:VPATIENTID, :DCREATEDATE, :VNAME, :PINYINMA, :WUBIMA, :NSEX, :DBIRTHDATE, :VBIRTHPLACE, :VBIRTHPLACEDETAIL, :VNATION, :VNATIONNAME, :VIDTYPE, :VIDNO, :VUNITINCONTRACT, :VUNITINCONTRACTNAME, :VMAILINGADDRESS, :VZIPID, :VPHONENUMBERHOME, :VPHONENUMBERBUSINESS, :VLINKMAN, :VRELATIONSHIP, :VNEXTOFKINADDR, :VNEXTOFKINZIPID, :VPHONE, :DLASTVISITDATE, :NVIPINDICATOR, :VOPERATORID, :VDEGREE, :VRACE, :VRELIGION, :VMOTHERLANGUAGE, :VFOREIGNLANGUAGE, :VVIPNO, :VENGLISHNAME, :VREMARKS, :NCOUNTRY, :NPROVINCES, :NCITY, :NSTREET, :NPROFESSIONID, :NIDENTITY, :VPRESENTADDRESS, :VISITNO, :NMARRY, :VORGAN, :NDICAREAID, :VDIAGNOSE, :NDISEASEID, :NZYZEXZ, :NZYYPXZ)</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VBIRTHPLACE" Column="VBIRTHPLACE" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VBIRTHPLACEDETAIL" Column="VBIRTHPLACEDETAIL" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIONNAME" Column="VNATIONNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VUNITINCONTRACTNAME" Column="VUNITINCONTRACTNAME" DataType="OracleType.NVarChar" Length="200" Dir="IN" />
+        <Param Name="VMAILINGADDRESS" Column="VMAILINGADDRESS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VZIPID" Column="VZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONENUMBERHOME" Column="VPHONENUMBERHOME" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VPHONENUMBERBUSINESS" Column="VPHONENUMBERBUSINESS" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VRELATIONSHIP" Column="VRELATIONSHIP" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VNEXTOFKINADDR" Column="VNEXTOFKINADDR" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNEXTOFKINZIPID" Column="VNEXTOFKINZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="DLASTVISITDATE" Column="DLASTVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVIPINDICATOR" Column="NVIPINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEGREE" Column="VDEGREE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRACE" Column="VRACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRELIGION" Column="VRELIGION" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VMOTHERLANGUAGE" Column="VMOTHERLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VFOREIGNLANGUAGE" Column="VFOREIGNLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VVIPNO" Column="VVIPNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VENGLISHNAME" Column="VENGLISHNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNTRY" Column="NCOUNTRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROVINCES" Column="NPROVINCES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCITY" Column="NCITY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSTREET" Column="NSTREET" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VISITNO" Column="VISITNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NMARRY" Column="NMARRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VORGAN" Column="VORGAN" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NDISEASEID" Column="NDISEASEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYZEXZ" Column="NZYZEXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYYPXZ" Column="NZYYPXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_PATIENTINFO">
+        <String>DELETE FROM GHSF.GHSF_PATIENTINFO
+ WHERE
+ VPATIENTID = :VPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_PATIENTINFO">
+        <String>UPDATE GHSF.GHSF_PATIENTINFO
+ SET
+ VPATIENTID = :VPATIENTID, DCREATEDATE = :DCREATEDATE, VNAME = :VNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, NSEX = :NSEX, DBIRTHDATE = :DBIRTHDATE, VBIRTHPLACE = :VBIRTHPLACE, VBIRTHPLACEDETAIL = :VBIRTHPLACEDETAIL, VNATION = :VNATION, VNATIONNAME = :VNATIONNAME, VIDTYPE = :VIDTYPE, VIDNO = :VIDNO, VUNITINCONTRACT = :VUNITINCONTRACT, VUNITINCONTRACTNAME = :VUNITINCONTRACTNAME, VMAILINGADDRESS = :VMAILINGADDRESS, VZIPID = :VZIPID, VPHONENUMBERHOME = :VPHONENUMBERHOME, VPHONENUMBERBUSINESS = :VPHONENUMBERBUSINESS, VLINKMAN = :VLINKMAN, VRELATIONSHIP = :VRELATIONSHIP, VNEXTOFKINADDR = :VNEXTOFKINADDR, VNEXTOFKINZIPID = :VNEXTOFKINZIPID, VPHONE = :VPHONE, DLASTVISITDATE = :DLASTVISITDATE, NVIPINDICATOR = :NVIPINDICATOR, VOPERATORID = :VOPERATORID, VDEGREE = :VDEGREE, VRACE = :VRACE, VRELIGION = :VRELIGION, VMOTHERLANGUAGE = :VMOTHERLANGUAGE, VFOREIGNLANGUAGE = :VFOREIGNLANGUAGE, VVIPNO = :VVIPNO, VENGLISHNAME = :VENGLISHNAME, VREMARKS = :VREMARKS, NCOUNTRY = :NCOUNTRY, NPROVINCES = :NPROVINCES, NCITY = :NCITY, NSTREET = :NSTREET, NPROFESSIONID = :NPROFESSIONID, NIDENTITY = :NIDENTITY, VPRESENTADDRESS = :VPRESENTADDRESS, VISITNO = :VISITNO, NMARRY = :NMARRY, VORGAN = :VORGAN, NDICAREAID = :NDICAREAID, VDIAGNOSE = :VDIAGNOSE, NDISEASEID = :NDISEASEID, NZYZEXZ = :NZYZEXZ, NZYYPXZ = :NZYYPXZ 
+ WHERE
+ VPATIENTID = :OLDVPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VBIRTHPLACE" Column="VBIRTHPLACE" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VBIRTHPLACEDETAIL" Column="VBIRTHPLACEDETAIL" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIONNAME" Column="VNATIONNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VUNITINCONTRACTNAME" Column="VUNITINCONTRACTNAME" DataType="OracleType.NVarChar" Length="200" Dir="IN" />
+        <Param Name="VMAILINGADDRESS" Column="VMAILINGADDRESS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VZIPID" Column="VZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONENUMBERHOME" Column="VPHONENUMBERHOME" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VPHONENUMBERBUSINESS" Column="VPHONENUMBERBUSINESS" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VRELATIONSHIP" Column="VRELATIONSHIP" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VNEXTOFKINADDR" Column="VNEXTOFKINADDR" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNEXTOFKINZIPID" Column="VNEXTOFKINZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="DLASTVISITDATE" Column="DLASTVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVIPINDICATOR" Column="NVIPINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEGREE" Column="VDEGREE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRACE" Column="VRACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRELIGION" Column="VRELIGION" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VMOTHERLANGUAGE" Column="VMOTHERLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VFOREIGNLANGUAGE" Column="VFOREIGNLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VVIPNO" Column="VVIPNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VENGLISHNAME" Column="VENGLISHNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNTRY" Column="NCOUNTRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROVINCES" Column="NPROVINCES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCITY" Column="NCITY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSTREET" Column="NSTREET" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VISITNO" Column="VISITNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NMARRY" Column="NMARRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VORGAN" Column="VORGAN" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NDISEASEID" Column="NDISEASEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYZEXZ" Column="NZYZEXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYYPXZ" Column="NZYYPXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_PATIENTINFO">
+        <String>SELECT VPATIENTID, DCREATEDATE, VNAME, PINYINMA, WUBIMA, NSEX, DBIRTHDATE, VBIRTHPLACE, VBIRTHPLACEDETAIL, VNATION, VNATIONNAME, VIDTYPE, VIDNO, VUNITINCONTRACT, VUNITINCONTRACTNAME, VMAILINGADDRESS, VZIPID, VPHONENUMBERHOME, VPHONENUMBERBUSINESS, VLINKMAN, VRELATIONSHIP, VNEXTOFKINADDR, VNEXTOFKINZIPID, VPHONE, DLASTVISITDATE, NVIPINDICATOR, VOPERATORID, VDEGREE, VRACE, VRELIGION, VMOTHERLANGUAGE, VFOREIGNLANGUAGE, VVIPNO, VENGLISHNAME, VREMARKS, NCOUNTRY, NPROVINCES, NCITY, NSTREET, NPROFESSIONID, NIDENTITY, VPRESENTADDRESS, VISITNO, NMARRY, VORGAN, NDICAREAID, VDIAGNOSE, NDISEASEID, NZYZEXZ, NZYYPXZ
+ FROM GHSF.GHSF_PATIENTINFO
+ WHERE
+ VPATIENTID = :VPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_PATIENTINFO
+ WHERE 1=1
+</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_PATIENTINFO">
+        <String>SELECT VPATIENTID, DCREATEDATE, VNAME, PINYINMA, WUBIMA, NSEX, DBIRTHDATE, VBIRTHPLACE, VBIRTHPLACEDETAIL, VNATION, VNATIONNAME, VIDTYPE, VIDNO, VUNITINCONTRACT, VUNITINCONTRACTNAME, VMAILINGADDRESS, VZIPID, VPHONENUMBERHOME, VPHONENUMBERBUSINESS, VLINKMAN, VRELATIONSHIP, VNEXTOFKINADDR, VNEXTOFKINZIPID, VPHONE, DLASTVISITDATE, NVIPINDICATOR, VOPERATORID, VDEGREE, VRACE, VRELIGION, VMOTHERLANGUAGE, VFOREIGNLANGUAGE, VVIPNO, VENGLISHNAME, VREMARKS, NCOUNTRY, NPROVINCES, NCITY, NSTREET, NPROFESSIONID, NIDENTITY, VPRESENTADDRESS, VISITNO, NMARRY, VORGAN, NDICAREAID, VDIAGNOSE, NDISEASEID, NZYZEXZ, NZYYPXZ
+ FROM GHSF.GHSF_PATIENTINFO
+ WHERE
+ VPATIENTID = :VPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_PATIENTINFO
+ WHERE 1=1
+</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_PATIENTINFO">
+        <String>DELETE FROM GHSF.GHSF_PATIENTINFO
+ WHERE
+ VPATIENTID = :VPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_PATIENTINFO">
+        <String>UPDATE GHSF.GHSF_PATIENTINFO
+ SET
+ VPATIENTID = :VPATIENTID, DCREATEDATE = :DCREATEDATE, VNAME = :VNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, NSEX = :NSEX, DBIRTHDATE = :DBIRTHDATE, VBIRTHPLACE = :VBIRTHPLACE, VBIRTHPLACEDETAIL = :VBIRTHPLACEDETAIL, VNATION = :VNATION, VNATIONNAME = :VNATIONNAME, VIDTYPE = :VIDTYPE, VIDNO = :VIDNO, VUNITINCONTRACT = :VUNITINCONTRACT, VUNITINCONTRACTNAME = :VUNITINCONTRACTNAME, VMAILINGADDRESS = :VMAILINGADDRESS, VZIPID = :VZIPID, VPHONENUMBERHOME = :VPHONENUMBERHOME, VPHONENUMBERBUSINESS = :VPHONENUMBERBUSINESS, VLINKMAN = :VLINKMAN, VRELATIONSHIP = :VRELATIONSHIP, VNEXTOFKINADDR = :VNEXTOFKINADDR, VNEXTOFKINZIPID = :VNEXTOFKINZIPID, VPHONE = :VPHONE, DLASTVISITDATE = :DLASTVISITDATE, NVIPINDICATOR = :NVIPINDICATOR, VOPERATORID = :VOPERATORID, VDEGREE = :VDEGREE, VRACE = :VRACE, VRELIGION = :VRELIGION, VMOTHERLANGUAGE = :VMOTHERLANGUAGE, VFOREIGNLANGUAGE = :VFOREIGNLANGUAGE, VVIPNO = :VVIPNO, VENGLISHNAME = :VENGLISHNAME, VREMARKS = :VREMARKS, NCOUNTRY = :NCOUNTRY, NPROVINCES = :NPROVINCES, NCITY = :NCITY, NSTREET = :NSTREET, NPROFESSIONID = :NPROFESSIONID, NIDENTITY = :NIDENTITY, VPRESENTADDRESS = :VPRESENTADDRESS, VISITNO = :VISITNO, NMARRY = :NMARRY, VORGAN = :VORGAN, NDICAREAID = :NDICAREAID, VDIAGNOSE = :VDIAGNOSE, NDISEASEID = :NDISEASEID, NZYZEXZ = :NZYZEXZ, NZYYPXZ = :NZYYPXZ 
+ WHERE
+ VPATIENTID = :OLDVPATIENTID</String>
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VBIRTHPLACE" Column="VBIRTHPLACE" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VBIRTHPLACEDETAIL" Column="VBIRTHPLACEDETAIL" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIONNAME" Column="VNATIONNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VUNITINCONTRACTNAME" Column="VUNITINCONTRACTNAME" DataType="OracleType.NVarChar" Length="200" Dir="IN" />
+        <Param Name="VMAILINGADDRESS" Column="VMAILINGADDRESS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VZIPID" Column="VZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONENUMBERHOME" Column="VPHONENUMBERHOME" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VPHONENUMBERBUSINESS" Column="VPHONENUMBERBUSINESS" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VRELATIONSHIP" Column="VRELATIONSHIP" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VNEXTOFKINADDR" Column="VNEXTOFKINADDR" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNEXTOFKINZIPID" Column="VNEXTOFKINZIPID" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="DLASTVISITDATE" Column="DLASTVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVIPINDICATOR" Column="NVIPINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEGREE" Column="VDEGREE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRACE" Column="VRACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRELIGION" Column="VRELIGION" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VMOTHERLANGUAGE" Column="VMOTHERLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VFOREIGNLANGUAGE" Column="VFOREIGNLANGUAGE" DataType="OracleType.VarChar" Length="16" Dir="IN" />
+        <Param Name="VVIPNO" Column="VVIPNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VENGLISHNAME" Column="VENGLISHNAME" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNTRY" Column="NCOUNTRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROVINCES" Column="NPROVINCES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCITY" Column="NCITY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSTREET" Column="NSTREET" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VISITNO" Column="VISITNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NMARRY" Column="NMARRY" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VORGAN" Column="VORGAN" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NDISEASEID" Column="NDISEASEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYZEXZ" Column="NZYZEXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZYYPXZ" Column="NZYYPXZ" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_REGHIS</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_REGHIS</TableName>
+      <Columns>
+        <Column Name="VCLINICNO" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="DVISITDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NVISITNO" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VAPPTIME" DataType="System.String" Length="8" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPATIENTID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNAME" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="PINYINMA" DataType="System.String" Length="60" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="WUBIMA" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NSEX" DataType="System.Int16" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NAGE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DBIRTHDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NIDENTITY" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCHARGETYPE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VINSURANCETY" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VINSURANCEN" DataType="System.String" Length="8" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VUNITINCONTRACT" DataType="System.String" Length="11" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCLINICTYPE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCFIRSTVISITIND" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VVISITDEPT" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VDOCTOR" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NMRPROVIDEINDICATOR" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NREGSTATUS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DREGDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSYMPTOM" DataType="System.String" Length="40" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NREGISTFEE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCLINICFEE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NOTHERFEE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCLINICCHARG" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DRETURNDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VIDTYPE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VIDNO" DataType="System.String" Length="18" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VRETURNID" DataType="System.String" Length="8" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NMODEID" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VCARDNO" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DACCTDATETI" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DACCTNO" DataType="System.String" Length="6" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NMRPROVIDEDINDICATOR" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VAPPOINTSID" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNATION" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNATIVEPLACE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRESENTADDRESS" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VLINKMAN" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPHONE" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NKA" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPROFESSIONID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDICGHTYPE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VBSETCARD" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PERSONACCOUNTINFO" DataType="System.String" Length="1000" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="YBGRBH" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCHARGE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PURCHASINGPERSONNAME" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PURCHASINGPERSONVIDNO" DataType="System.String" Length="18" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="PURCHASINGPERSONVPHONE" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="RELATIONSHIPWITHPATIENTS" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="YBLX" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDICAREAID" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHREGNO" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="BCJSFF" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHLYZT" DataType="System.String" Length="2" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="JSDISEASE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VFIRST_VISITDEPT" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VFIRST_DOCTOR" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_REGHIS">
+        <String>INSERT INTO GHSF.GHSF_REGHIS
+ (VCLINICNO, DVISITDATE, NVISITNO, VAPPTIME, VPATIENTID, VNAME, PINYINMA, WUBIMA, NSEX, NAGE, DBIRTHDATE, NIDENTITY, NCHARGETYPE, VINSURANCETY, VINSURANCEN, VUNITINCONTRACT, NCLINICTYPE, NCFIRSTVISITIND, VVISITDEPT, VDOCTOR, NMRPROVIDEINDICATOR, NREGSTATUS, VOPERATORID, DREGDATE, VSYMPTOM, NREGISTFEE, NCLINICFEE, NOTHERFEE, NCLINICCHARG, DRETURNDATE, VIDTYPE, VIDNO, VRETURNID, NMODEID, VCARDNO, DACCTDATETI, DACCTNO, NMRPROVIDEDINDICATOR, VAPPOINTSID, VREMARKS, VNATION, VNATIVEPLACE, VPRESENTADDRESS, VLINKMAN, VPHONE, NKA, NPROFESSIONID, NDICGHTYPE, VBSETCARD, PERSONACCOUNTINFO, YBGRBH, NCHARGE, NHOSID, PURCHASINGPERSONNAME, PURCHASINGPERSONVIDNO, PURCHASINGPERSONVPHONE, RELATIONSHIPWITHPATIENTS, YBLX, NDICAREAID, NHREGNO, BCJSFF, NHLYZT, JSDISEASE, VFIRST_VISITDEPT, VFIRST_DOCTOR)
+ VALUES
+(:VCLINICNO, :DVISITDATE, :NVISITNO, :VAPPTIME, :VPATIENTID, :VNAME, :PINYINMA, :WUBIMA, :NSEX, :NAGE, :DBIRTHDATE, :NIDENTITY, :NCHARGETYPE, :VINSURANCETY, :VINSURANCEN, :VUNITINCONTRACT, :NCLINICTYPE, :NCFIRSTVISITIND, :VVISITDEPT, :VDOCTOR, :NMRPROVIDEINDICATOR, :NREGSTATUS, :VOPERATORID, :DREGDATE, :VSYMPTOM, :NREGISTFEE, :NCLINICFEE, :NOTHERFEE, :NCLINICCHARG, :DRETURNDATE, :VIDTYPE, :VIDNO, :VRETURNID, :NMODEID, :VCARDNO, :DACCTDATETI, :DACCTNO, :NMRPROVIDEDINDICATOR, :VAPPOINTSID, :VREMARKS, :VNATION, :VNATIVEPLACE, :VPRESENTADDRESS, :VLINKMAN, :VPHONE, :NKA, :NPROFESSIONID, :NDICGHTYPE, :VBSETCARD, :PERSONACCOUNTINFO, :YBGRBH, :NCHARGE, :NHOSID, :PURCHASINGPERSONNAME, :PURCHASINGPERSONVIDNO, :PURCHASINGPERSONVPHONE, :RELATIONSHIPWITHPATIENTS, :YBLX, :NDICAREAID, :NHREGNO, :BCJSFF, :NHLYZT, :JSDISEASE, :VFIRST_VISITDEPT, :VFIRST_DOCTOR)</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DVISITDATE" Column="DVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVISITNO" Column="NVISITNO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPTIME" Column="VAPPTIME" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAGE" Column="NAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NCHARGETYPE" Column="NCHARGETYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINSURANCETY" Column="VINSURANCETY" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VINSURANCEN" Column="VINSURANCEN" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="11" Dir="IN" />
+        <Param Name="NCLINICTYPE" Column="NCLINICTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCFIRSTVISITIND" Column="NCFIRSTVISITIND" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR" Column="VDOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NMRPROVIDEINDICATOR" Column="NMRPROVIDEINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGSTATUS" Column="NREGSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DREGDATE" Column="DREGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSYMPTOM" Column="VSYMPTOM" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="NREGISTFEE" Column="NREGISTFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICFEE" Column="NCLINICFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOTHERFEE" Column="NOTHERFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICCHARG" Column="NCLINICCHARG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DRETURNDATE" Column="DRETURNDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VRETURNID" Column="VRETURNID" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="NMODEID" Column="NMODEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DACCTDATETI" Column="DACCTDATETI" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DACCTNO" Column="DACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="NMRPROVIDEDINDICATOR" Column="NMRPROVIDEDINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPOINTSID" Column="VAPPOINTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIVEPLACE" Column="VNATIVEPLACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NKA" Column="NKA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDICGHTYPE" Column="NDICGHTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VBSETCARD" Column="VBSETCARD" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PERSONACCOUNTINFO" Column="PERSONACCOUNTINFO" DataType="OracleType.VarChar" Length="1000" Dir="IN" />
+        <Param Name="YBGRBH" Column="YBGRBH" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NCHARGE" Column="NCHARGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PURCHASINGPERSONNAME" Column="PURCHASINGPERSONNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVIDNO" Column="PURCHASINGPERSONVIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVPHONE" Column="PURCHASINGPERSONVPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="RELATIONSHIPWITHPATIENTS" Column="RELATIONSHIPWITHPATIENTS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="YBLX" Column="YBLX" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHREGNO" Column="NHREGNO" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="BCJSFF" Column="BCJSFF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NHLYZT" Column="NHLYZT" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="JSDISEASE" Column="JSDISEASE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VFIRST_VISITDEPT" Column="VFIRST_VISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VFIRST_DOCTOR" Column="VFIRST_DOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_REGHIS">
+        <String>DELETE FROM GHSF.GHSF_REGHIS
+ WHERE
+ VCLINICNO = :VCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_REGHIS">
+        <String>UPDATE GHSF.GHSF_REGHIS
+ SET
+ VCLINICNO = :VCLINICNO, DVISITDATE = :DVISITDATE, NVISITNO = :NVISITNO, VAPPTIME = :VAPPTIME, VPATIENTID = :VPATIENTID, VNAME = :VNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, NSEX = :NSEX, NAGE = :NAGE, DBIRTHDATE = :DBIRTHDATE, NIDENTITY = :NIDENTITY, NCHARGETYPE = :NCHARGETYPE, VINSURANCETY = :VINSURANCETY, VINSURANCEN = :VINSURANCEN, VUNITINCONTRACT = :VUNITINCONTRACT, NCLINICTYPE = :NCLINICTYPE, NCFIRSTVISITIND = :NCFIRSTVISITIND, VVISITDEPT = :VVISITDEPT, VDOCTOR = :VDOCTOR, NMRPROVIDEINDICATOR = :NMRPROVIDEINDICATOR, NREGSTATUS = :NREGSTATUS, VOPERATORID = :VOPERATORID, DREGDATE = :DREGDATE, VSYMPTOM = :VSYMPTOM, NREGISTFEE = :NREGISTFEE, NCLINICFEE = :NCLINICFEE, NOTHERFEE = :NOTHERFEE, NCLINICCHARG = :NCLINICCHARG, DRETURNDATE = :DRETURNDATE, VIDTYPE = :VIDTYPE, VIDNO = :VIDNO, VRETURNID = :VRETURNID, NMODEID = :NMODEID, VCARDNO = :VCARDNO, DACCTDATETI = :DACCTDATETI, DACCTNO = :DACCTNO, NMRPROVIDEDINDICATOR = :NMRPROVIDEDINDICATOR, VAPPOINTSID = :VAPPOINTSID, VREMARKS = :VREMARKS, VNATION = :VNATION, VNATIVEPLACE = :VNATIVEPLACE, VPRESENTADDRESS = :VPRESENTADDRESS, VLINKMAN = :VLINKMAN, VPHONE = :VPHONE, NKA = :NKA, NPROFESSIONID = :NPROFESSIONID, NDICGHTYPE = :NDICGHTYPE, VBSETCARD = :VBSETCARD, PERSONACCOUNTINFO = :PERSONACCOUNTINFO, YBGRBH = :YBGRBH, NCHARGE = :NCHARGE, NHOSID = :NHOSID, PURCHASINGPERSONNAME = :PURCHASINGPERSONNAME, PURCHASINGPERSONVIDNO = :PURCHASINGPERSONVIDNO, PURCHASINGPERSONVPHONE = :PURCHASINGPERSONVPHONE, RELATIONSHIPWITHPATIENTS = :RELATIONSHIPWITHPATIENTS, YBLX = :YBLX, NDICAREAID = :NDICAREAID, NHREGNO = :NHREGNO, BCJSFF = :BCJSFF, NHLYZT = :NHLYZT, JSDISEASE = :JSDISEASE, VFIRST_VISITDEPT = :VFIRST_VISITDEPT, VFIRST_DOCTOR = :VFIRST_DOCTOR 
+ WHERE
+ VCLINICNO = :OLDVCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DVISITDATE" Column="DVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVISITNO" Column="NVISITNO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPTIME" Column="VAPPTIME" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAGE" Column="NAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NCHARGETYPE" Column="NCHARGETYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINSURANCETY" Column="VINSURANCETY" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VINSURANCEN" Column="VINSURANCEN" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="11" Dir="IN" />
+        <Param Name="NCLINICTYPE" Column="NCLINICTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCFIRSTVISITIND" Column="NCFIRSTVISITIND" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR" Column="VDOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NMRPROVIDEINDICATOR" Column="NMRPROVIDEINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGSTATUS" Column="NREGSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DREGDATE" Column="DREGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSYMPTOM" Column="VSYMPTOM" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="NREGISTFEE" Column="NREGISTFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICFEE" Column="NCLINICFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOTHERFEE" Column="NOTHERFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICCHARG" Column="NCLINICCHARG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DRETURNDATE" Column="DRETURNDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VRETURNID" Column="VRETURNID" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="NMODEID" Column="NMODEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DACCTDATETI" Column="DACCTDATETI" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DACCTNO" Column="DACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="NMRPROVIDEDINDICATOR" Column="NMRPROVIDEDINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPOINTSID" Column="VAPPOINTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIVEPLACE" Column="VNATIVEPLACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NKA" Column="NKA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDICGHTYPE" Column="NDICGHTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VBSETCARD" Column="VBSETCARD" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PERSONACCOUNTINFO" Column="PERSONACCOUNTINFO" DataType="OracleType.VarChar" Length="1000" Dir="IN" />
+        <Param Name="YBGRBH" Column="YBGRBH" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NCHARGE" Column="NCHARGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PURCHASINGPERSONNAME" Column="PURCHASINGPERSONNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVIDNO" Column="PURCHASINGPERSONVIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVPHONE" Column="PURCHASINGPERSONVPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="RELATIONSHIPWITHPATIENTS" Column="RELATIONSHIPWITHPATIENTS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="YBLX" Column="YBLX" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHREGNO" Column="NHREGNO" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="BCJSFF" Column="BCJSFF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NHLYZT" Column="NHLYZT" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="JSDISEASE" Column="JSDISEASE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VFIRST_VISITDEPT" Column="VFIRST_VISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VFIRST_DOCTOR" Column="VFIRST_DOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="OLDVCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_REGHIS">
+        <String>SELECT VCLINICNO, DVISITDATE, NVISITNO, VAPPTIME, VPATIENTID, VNAME, PINYINMA, WUBIMA, NSEX, NAGE, DBIRTHDATE, NIDENTITY, NCHARGETYPE, VINSURANCETY, VINSURANCEN, VUNITINCONTRACT, NCLINICTYPE, NCFIRSTVISITIND, VVISITDEPT, VDOCTOR, NMRPROVIDEINDICATOR, NREGSTATUS, VOPERATORID, DREGDATE, VSYMPTOM, NREGISTFEE, NCLINICFEE, NOTHERFEE, NCLINICCHARG, DRETURNDATE, VIDTYPE, VIDNO, VRETURNID, NMODEID, VCARDNO, DACCTDATETI, DACCTNO, NMRPROVIDEDINDICATOR, VAPPOINTSID, VREMARKS, VNATION, VNATIVEPLACE, VPRESENTADDRESS, VLINKMAN, VPHONE, NKA, NPROFESSIONID, NDICGHTYPE, VBSETCARD, PERSONACCOUNTINFO, YBGRBH, NCHARGE, NHOSID, PURCHASINGPERSONNAME, PURCHASINGPERSONVIDNO, PURCHASINGPERSONVPHONE, RELATIONSHIPWITHPATIENTS, YBLX, NDICAREAID, NHREGNO, BCJSFF, NHLYZT, JSDISEASE, VFIRST_VISITDEPT, VFIRST_DOCTOR
+ FROM GHSF.GHSF_REGHIS
+ WHERE
+ VCLINICNO = :VCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_REGHIS
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+      <Sql Name="GHSF_FUN_GETVCLINICNOMZ">
+        <String>GHSF_FUN_GETVCLINICNOMZ</String>
+        <SqlMemo>
+        </SqlMemo>
+        <Param Name="RETURNVALUE" Column="RETURNVALUE" DataType="OracleType.VarChar" Length="50" Dir="RETURN" />
+        <Param Name="MPREFIX" Column="MPREFIX" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_REGHIS">
+        <String>SELECT VCLINICNO, DVISITDATE, NVISITNO, VAPPTIME, VPATIENTID, VNAME, PINYINMA, WUBIMA, NSEX, NAGE, DBIRTHDATE, NIDENTITY, NCHARGETYPE, VINSURANCETY, VINSURANCEN, VUNITINCONTRACT, NCLINICTYPE, NCFIRSTVISITIND, VVISITDEPT, VDOCTOR, NMRPROVIDEINDICATOR, NREGSTATUS, VOPERATORID, DREGDATE, VSYMPTOM, NREGISTFEE, NCLINICFEE, NOTHERFEE, NCLINICCHARG, DRETURNDATE, VIDTYPE, VIDNO, VRETURNID, NMODEID, VCARDNO, DACCTDATETI, DACCTNO, NMRPROVIDEDINDICATOR, VAPPOINTSID, VREMARKS, VNATION, VNATIVEPLACE, VPRESENTADDRESS, VLINKMAN, VPHONE, NKA, NPROFESSIONID, NDICGHTYPE, VBSETCARD, PERSONACCOUNTINFO, YBGRBH, NCHARGE, NHOSID, PURCHASINGPERSONNAME, PURCHASINGPERSONVIDNO, PURCHASINGPERSONVPHONE, RELATIONSHIPWITHPATIENTS, YBLX, NDICAREAID, NHREGNO, BCJSFF, NHLYZT, JSDISEASE, VFIRST_VISITDEPT, VFIRST_DOCTOR
+ FROM GHSF.GHSF_REGHIS
+ WHERE
+ VCLINICNO = :VCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_REGHIS
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls>
+      <Sql Name="GHSF_FUN_GETVCLINICNOMZ" Procedure="false">
+        <String>GHSF_FUN_GETVCLINICNOMZ</String>
+        <SqlMemo>
+        </SqlMemo>
+        <Param Name="RETURNVALUE" Column="RETURNVALUE" DataType="OracleType.VarChar" Length="50" Dir="RETURN" />
+        <Param Name="MPREFIX" Column="MPREFIX" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+      </Sql>
+    </ProcedureSqls>
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_REGHIS">
+        <String>DELETE FROM GHSF.GHSF_REGHIS
+ WHERE
+ VCLINICNO = :VCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_REGHIS">
+        <String>UPDATE GHSF.GHSF_REGHIS
+ SET
+ VCLINICNO = :VCLINICNO, DVISITDATE = :DVISITDATE, NVISITNO = :NVISITNO, VAPPTIME = :VAPPTIME, VPATIENTID = :VPATIENTID, VNAME = :VNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, NSEX = :NSEX, NAGE = :NAGE, DBIRTHDATE = :DBIRTHDATE, NIDENTITY = :NIDENTITY, NCHARGETYPE = :NCHARGETYPE, VINSURANCETY = :VINSURANCETY, VINSURANCEN = :VINSURANCEN, VUNITINCONTRACT = :VUNITINCONTRACT, NCLINICTYPE = :NCLINICTYPE, NCFIRSTVISITIND = :NCFIRSTVISITIND, VVISITDEPT = :VVISITDEPT, VDOCTOR = :VDOCTOR, NMRPROVIDEINDICATOR = :NMRPROVIDEINDICATOR, NREGSTATUS = :NREGSTATUS, VOPERATORID = :VOPERATORID, DREGDATE = :DREGDATE, VSYMPTOM = :VSYMPTOM, NREGISTFEE = :NREGISTFEE, NCLINICFEE = :NCLINICFEE, NOTHERFEE = :NOTHERFEE, NCLINICCHARG = :NCLINICCHARG, DRETURNDATE = :DRETURNDATE, VIDTYPE = :VIDTYPE, VIDNO = :VIDNO, VRETURNID = :VRETURNID, NMODEID = :NMODEID, VCARDNO = :VCARDNO, DACCTDATETI = :DACCTDATETI, DACCTNO = :DACCTNO, NMRPROVIDEDINDICATOR = :NMRPROVIDEDINDICATOR, VAPPOINTSID = :VAPPOINTSID, VREMARKS = :VREMARKS, VNATION = :VNATION, VNATIVEPLACE = :VNATIVEPLACE, VPRESENTADDRESS = :VPRESENTADDRESS, VLINKMAN = :VLINKMAN, VPHONE = :VPHONE, NKA = :NKA, NPROFESSIONID = :NPROFESSIONID, NDICGHTYPE = :NDICGHTYPE, VBSETCARD = :VBSETCARD, PERSONACCOUNTINFO = :PERSONACCOUNTINFO, YBGRBH = :YBGRBH, NCHARGE = :NCHARGE, NHOSID = :NHOSID, PURCHASINGPERSONNAME = :PURCHASINGPERSONNAME, PURCHASINGPERSONVIDNO = :PURCHASINGPERSONVIDNO, PURCHASINGPERSONVPHONE = :PURCHASINGPERSONVPHONE, RELATIONSHIPWITHPATIENTS = :RELATIONSHIPWITHPATIENTS, YBLX = :YBLX, NDICAREAID = :NDICAREAID, NHREGNO = :NHREGNO, BCJSFF = :BCJSFF, NHLYZT = :NHLYZT, JSDISEASE = :JSDISEASE, VFIRST_VISITDEPT = :VFIRST_VISITDEPT, VFIRST_DOCTOR = :VFIRST_DOCTOR 
+ WHERE
+ VCLINICNO = :OLDVCLINICNO</String>
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DVISITDATE" Column="DVISITDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NVISITNO" Column="NVISITNO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPTIME" Column="VAPPTIME" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VNAME" Column="VNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAGE" Column="NAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="DBIRTHDATE" Column="DBIRTHDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NIDENTITY" Column="NIDENTITY" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NCHARGETYPE" Column="NCHARGETYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINSURANCETY" Column="VINSURANCETY" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VINSURANCEN" Column="VINSURANCEN" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="VUNITINCONTRACT" Column="VUNITINCONTRACT" DataType="OracleType.VarChar" Length="11" Dir="IN" />
+        <Param Name="NCLINICTYPE" Column="NCLINICTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCFIRSTVISITIND" Column="NCFIRSTVISITIND" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR" Column="VDOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NMRPROVIDEINDICATOR" Column="NMRPROVIDEINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGSTATUS" Column="NREGSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DREGDATE" Column="DREGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSYMPTOM" Column="VSYMPTOM" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="NREGISTFEE" Column="NREGISTFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICFEE" Column="NCLINICFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOTHERFEE" Column="NOTHERFEE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCLINICCHARG" Column="NCLINICCHARG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DRETURNDATE" Column="DRETURNDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VIDTYPE" Column="VIDTYPE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VIDNO" Column="VIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="VRETURNID" Column="VRETURNID" DataType="OracleType.VarChar" Length="8" Dir="IN" />
+        <Param Name="NMODEID" Column="NMODEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="DACCTDATETI" Column="DACCTDATETI" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DACCTNO" Column="DACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="NMRPROVIDEDINDICATOR" Column="NMRPROVIDEDINDICATOR" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VAPPOINTSID" Column="VAPPOINTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VNATION" Column="VNATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNATIVEPLACE" Column="VNATIVEPLACE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESENTADDRESS" Column="VPRESENTADDRESS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLINKMAN" Column="VLINKMAN" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPHONE" Column="VPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NKA" Column="NKA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDICGHTYPE" Column="NDICGHTYPE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VBSETCARD" Column="VBSETCARD" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="PERSONACCOUNTINFO" Column="PERSONACCOUNTINFO" DataType="OracleType.VarChar" Length="1000" Dir="IN" />
+        <Param Name="YBGRBH" Column="YBGRBH" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NCHARGE" Column="NCHARGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PURCHASINGPERSONNAME" Column="PURCHASINGPERSONNAME" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVIDNO" Column="PURCHASINGPERSONVIDNO" DataType="OracleType.VarChar" Length="18" Dir="IN" />
+        <Param Name="PURCHASINGPERSONVPHONE" Column="PURCHASINGPERSONVPHONE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="RELATIONSHIPWITHPATIENTS" Column="RELATIONSHIPWITHPATIENTS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="YBLX" Column="YBLX" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICAREAID" Column="NDICAREAID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHREGNO" Column="NHREGNO" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="BCJSFF" Column="BCJSFF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NHLYZT" Column="NHLYZT" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="JSDISEASE" Column="JSDISEASE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VFIRST_VISITDEPT" Column="VFIRST_VISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VFIRST_DOCTOR" Column="VFIRST_DOCTOR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="OLDVCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_JZ</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_JZ</TableName>
+      <Columns>
+        <Column Name="VACCOUNTSID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VRCPTID" DataType="System.String" Length="2" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VPRESCNO" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VITEMID" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VITEMNAME" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPRICE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCOSTS" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCOUNTSCOSTS" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NCHARGEFLAG" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="1" IsKey="False" />
+        <Column Name="DMEDICINEDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSETTLE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="DSETTLEDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSETTLEID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VCARDNO" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCOUNT" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VINVOICENO" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NFLAG" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VVISITDEPT" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPATIENTID" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCT_MODE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VCOUNTDEPT" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDOCTOR_ID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VACCTID" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCOUNTTF" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="VACCOUNTSIDTF" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NOPHZID" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="VCLINICNO" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_JZ">
+        <String>INSERT INTO GHSF.GHSF_JZ
+ (VACCOUNTSID, VRCPTID, VPRESCNO, VITEMID, VITEMNAME, NPRICE, NCOSTS, NACCOUNTSCOSTS, NCHARGEFLAG, DMEDICINEDATE, VOPERATORID, NSETTLE, DSETTLEDATE, VSETTLEID, VCARDNO, NACCOUNT, VINVOICENO, NFLAG, VVISITDEPT, VREMARKS, VPATIENTID, NACCT_MODE, VCOUNTDEPT, VDOCTOR_ID, VACCTID, NACCOUNTTF, VACCOUNTSIDTF, NOPHZID, VCLINICNO, NHOSID)
+ VALUES
+(:VACCOUNTSID, :VRCPTID, :VPRESCNO, :VITEMID, :VITEMNAME, :NPRICE, :NCOSTS, :NACCOUNTSCOSTS, :NCHARGEFLAG, :DMEDICINEDATE, :VOPERATORID, :NSETTLE, :DSETTLEDATE, :VSETTLEID, :VCARDNO, :NACCOUNT, :VINVOICENO, :NFLAG, :VVISITDEPT, :VREMARKS, :VPATIENTID, :NACCT_MODE, :VCOUNTDEPT, :VDOCTOR_ID, :VACCTID, :NACCOUNTTF, :VACCOUNTSIDTF, :NOPHZID, :VCLINICNO, :NHOSID)</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VPRESCNO" Column="VPRESCNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VITEMID" Column="VITEMID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VITEMNAME" Column="VITEMNAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCOUNTSCOSTS" Column="NACCOUNTSCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DSETTLEDATE" Column="DSETTLEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSETTLEID" Column="VSETTLEID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NFLAG" Column="NFLAG" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCT_MODE" Column="NACCT_MODE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCOUNTDEPT" Column="VCOUNTDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNTTF" Column="NACCOUNTTF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VACCOUNTSIDTF" Column="VACCOUNTSIDTF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_JZ">
+        <String>DELETE FROM GHSF.GHSF_JZ
+ WHERE
+ VACCOUNTSID = :VACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_JZ">
+        <String>UPDATE GHSF.GHSF_JZ
+ SET
+ VACCOUNTSID = :VACCOUNTSID, VRCPTID = :VRCPTID, VPRESCNO = :VPRESCNO, VITEMID = :VITEMID, VITEMNAME = :VITEMNAME, NPRICE = :NPRICE, NCOSTS = :NCOSTS, NACCOUNTSCOSTS = :NACCOUNTSCOSTS, NCHARGEFLAG = :NCHARGEFLAG, DMEDICINEDATE = :DMEDICINEDATE, VOPERATORID = :VOPERATORID, NSETTLE = :NSETTLE, DSETTLEDATE = :DSETTLEDATE, VSETTLEID = :VSETTLEID, VCARDNO = :VCARDNO, NACCOUNT = :NACCOUNT, VINVOICENO = :VINVOICENO, NFLAG = :NFLAG, VVISITDEPT = :VVISITDEPT, VREMARKS = :VREMARKS, VPATIENTID = :VPATIENTID, NACCT_MODE = :NACCT_MODE, VCOUNTDEPT = :VCOUNTDEPT, VDOCTOR_ID = :VDOCTOR_ID, VACCTID = :VACCTID, NACCOUNTTF = :NACCOUNTTF, VACCOUNTSIDTF = :VACCOUNTSIDTF, NOPHZID = :NOPHZID, VCLINICNO = :VCLINICNO, NHOSID = :NHOSID 
+ WHERE
+ VACCOUNTSID = :OLDVACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VPRESCNO" Column="VPRESCNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VITEMID" Column="VITEMID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VITEMNAME" Column="VITEMNAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCOUNTSCOSTS" Column="NACCOUNTSCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DSETTLEDATE" Column="DSETTLEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSETTLEID" Column="VSETTLEID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NFLAG" Column="NFLAG" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCT_MODE" Column="NACCT_MODE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCOUNTDEPT" Column="VCOUNTDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNTTF" Column="NACCOUNTTF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VACCOUNTSIDTF" Column="VACCOUNTSIDTF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_JZ">
+        <String>SELECT VACCOUNTSID, VRCPTID, VPRESCNO, VITEMID, VITEMNAME, NPRICE, NCOSTS, NACCOUNTSCOSTS, NCHARGEFLAG, DMEDICINEDATE, VOPERATORID, NSETTLE, DSETTLEDATE, VSETTLEID, VCARDNO, NACCOUNT, VINVOICENO, NFLAG, VVISITDEPT, VREMARKS, VPATIENTID, NACCT_MODE, VCOUNTDEPT, VDOCTOR_ID, VACCTID, NACCOUNTTF, VACCOUNTSIDTF, NOPHZID, VCLINICNO, NHOSID
+ FROM GHSF.GHSF_JZ
+ WHERE
+ VACCOUNTSID = :VACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_JZ
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_JZ">
+        <String>SELECT VACCOUNTSID, VRCPTID, VPRESCNO, VITEMID, VITEMNAME, NPRICE, NCOSTS, NACCOUNTSCOSTS, NCHARGEFLAG, DMEDICINEDATE, VOPERATORID, NSETTLE, DSETTLEDATE, VSETTLEID, VCARDNO, NACCOUNT, VINVOICENO, NFLAG, VVISITDEPT, VREMARKS, VPATIENTID, NACCT_MODE, VCOUNTDEPT, VDOCTOR_ID, VACCTID, NACCOUNTTF, VACCOUNTSIDTF, NOPHZID, VCLINICNO, NHOSID
+ FROM GHSF.GHSF_JZ
+ WHERE
+ VACCOUNTSID = :VACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_JZ
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_JZ">
+        <String>DELETE FROM GHSF.GHSF_JZ
+ WHERE
+ VACCOUNTSID = :VACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_JZ">
+        <String>UPDATE GHSF.GHSF_JZ
+ SET
+ VACCOUNTSID = :VACCOUNTSID, VRCPTID = :VRCPTID, VPRESCNO = :VPRESCNO, VITEMID = :VITEMID, VITEMNAME = :VITEMNAME, NPRICE = :NPRICE, NCOSTS = :NCOSTS, NACCOUNTSCOSTS = :NACCOUNTSCOSTS, NCHARGEFLAG = :NCHARGEFLAG, DMEDICINEDATE = :DMEDICINEDATE, VOPERATORID = :VOPERATORID, NSETTLE = :NSETTLE, DSETTLEDATE = :DSETTLEDATE, VSETTLEID = :VSETTLEID, VCARDNO = :VCARDNO, NACCOUNT = :NACCOUNT, VINVOICENO = :VINVOICENO, NFLAG = :NFLAG, VVISITDEPT = :VVISITDEPT, VREMARKS = :VREMARKS, VPATIENTID = :VPATIENTID, NACCT_MODE = :NACCT_MODE, VCOUNTDEPT = :VCOUNTDEPT, VDOCTOR_ID = :VDOCTOR_ID, VACCTID = :VACCTID, NACCOUNTTF = :NACCOUNTTF, VACCOUNTSIDTF = :VACCOUNTSIDTF, NOPHZID = :NOPHZID, VCLINICNO = :VCLINICNO, NHOSID = :NHOSID 
+ WHERE
+ VACCOUNTSID = :OLDVACCOUNTSID</String>
+        <Param Name="VACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="2" Dir="IN" />
+        <Param Name="VPRESCNO" Column="VPRESCNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VITEMID" Column="VITEMID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="VITEMNAME" Column="VITEMNAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCOUNTSCOSTS" Column="NACCOUNTSCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DSETTLEDATE" Column="DSETTLEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VSETTLEID" Column="VSETTLEID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VCARDNO" Column="VCARDNO" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NFLAG" Column="NFLAG" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VVISITDEPT" Column="VVISITDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCT_MODE" Column="NACCT_MODE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCOUNTDEPT" Column="VCOUNTDEPT" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNTTF" Column="NACCOUNTTF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VACCOUNTSIDTF" Column="VACCOUNTSIDTF" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VCLINICNO" Column="VCLINICNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVACCOUNTSID" Column="VACCOUNTSID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_REGPLAN</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_REGPLAN</TableName>
+      <Columns>
+        <Column Name="VPLANID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VDOCTORID" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NTIMEDESC" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NREGLIMITS" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NAPPLIMITS" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NREGNUMBER" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NAPPNUMBER" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NREGPRICE" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DCREATEDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DCLINICDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPTID" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_REGPLAN">
+        <String>INSERT INTO GHSF.GHSF_REGPLAN
+ (VPLANID, VDOCTORID, NTIMEDESC, NREGLIMITS, NAPPLIMITS, NREGNUMBER, NAPPNUMBER, NREGPRICE, VOPERATORID, DCREATEDATE, VREMARKS, DCLINICDATE, VDEPTID, NHOSID)
+ VALUES
+(:VPLANID, :VDOCTORID, :NTIMEDESC, :NREGLIMITS, :NAPPLIMITS, :NREGNUMBER, :NAPPNUMBER, :NREGPRICE, :VOPERATORID, :DCREATEDATE, :VREMARKS, :DCLINICDATE, :VDEPTID, :NHOSID)</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTORID" Column="VDOCTORID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTIMEDESC" Column="NTIMEDESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGLIMITS" Column="NREGLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPLIMITS" Column="NAPPLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGNUMBER" Column="NREGNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPNUMBER" Column="NAPPNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGPRICE" Column="NREGPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCLINICDATE" Column="DCLINICDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_REGPLAN">
+        <String>DELETE FROM GHSF.GHSF_REGPLAN
+ WHERE
+ VPLANID = :VPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_REGPLAN">
+        <String>UPDATE GHSF.GHSF_REGPLAN
+ SET
+ VPLANID = :VPLANID, VDOCTORID = :VDOCTORID, NTIMEDESC = :NTIMEDESC, NREGLIMITS = :NREGLIMITS, NAPPLIMITS = :NAPPLIMITS, NREGNUMBER = :NREGNUMBER, NAPPNUMBER = :NAPPNUMBER, NREGPRICE = :NREGPRICE, VOPERATORID = :VOPERATORID, DCREATEDATE = :DCREATEDATE, VREMARKS = :VREMARKS, DCLINICDATE = :DCLINICDATE, VDEPTID = :VDEPTID, NHOSID = :NHOSID 
+ WHERE
+ VPLANID = :OLDVPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTORID" Column="VDOCTORID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTIMEDESC" Column="NTIMEDESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGLIMITS" Column="NREGLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPLIMITS" Column="NAPPLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGNUMBER" Column="NREGNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPNUMBER" Column="NAPPNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGPRICE" Column="NREGPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCLINICDATE" Column="DCLINICDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_REGPLAN">
+        <String>SELECT VPLANID, VDOCTORID, NTIMEDESC, NREGLIMITS, NAPPLIMITS, NREGNUMBER, NAPPNUMBER, NREGPRICE, VOPERATORID, DCREATEDATE, VREMARKS, DCLINICDATE, VDEPTID, NHOSID
+ FROM GHSF.GHSF_REGPLAN
+ WHERE
+ VPLANID = :VPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_REGPLAN
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_REGPLAN">
+        <String>SELECT VPLANID, VDOCTORID, NTIMEDESC, NREGLIMITS, NAPPLIMITS, NREGNUMBER, NAPPNUMBER, NREGPRICE, VOPERATORID, DCREATEDATE, VREMARKS, DCLINICDATE, VDEPTID, NHOSID
+ FROM GHSF.GHSF_REGPLAN
+ WHERE
+ VPLANID = :VPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_REGPLAN
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_REGPLAN">
+        <String>DELETE FROM GHSF.GHSF_REGPLAN
+ WHERE
+ VPLANID = :VPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_REGPLAN">
+        <String>UPDATE GHSF.GHSF_REGPLAN
+ SET
+ VPLANID = :VPLANID, VDOCTORID = :VDOCTORID, NTIMEDESC = :NTIMEDESC, NREGLIMITS = :NREGLIMITS, NAPPLIMITS = :NAPPLIMITS, NREGNUMBER = :NREGNUMBER, NAPPNUMBER = :NAPPNUMBER, NREGPRICE = :NREGPRICE, VOPERATORID = :VOPERATORID, DCREATEDATE = :DCREATEDATE, VREMARKS = :VREMARKS, DCLINICDATE = :DCLINICDATE, VDEPTID = :VDEPTID, NHOSID = :NHOSID 
+ WHERE
+ VPLANID = :OLDVPLANID</String>
+        <Param Name="VPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTORID" Column="VDOCTORID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTIMEDESC" Column="NTIMEDESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGLIMITS" Column="NREGLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPLIMITS" Column="NAPPLIMITS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGNUMBER" Column="NREGNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NAPPNUMBER" Column="NAPPNUMBER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NREGPRICE" Column="NREGPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DCREATEDATE" Column="DCREATEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCLINICDATE" Column="DCLINICDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVPLANID" Column="VPLANID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_CHARGEMAIN</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_CHARGEMAIN</TableName>
+      <Columns>
+        <Column Name="VPRESC_TYPE" DataType="System.String" Length="12" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DPRESC_DATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPT_CODE" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VACCTID" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="BBAIYAO" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VRCPTID" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VPATIENTID" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VREGIST_ID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRESC_ID" DataType="System.String" Length="60" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VDIAGNOSE" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCOUNT" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VUSERAGE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDOCTOR_ID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VREFUNDEDRCPTNO" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VACCTNO" DataType="System.String" Length="6" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRINTEDOPERATORID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRINTEDDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRINTEDRCPTNO" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VINVOICENO" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSETTLE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DCHARGE_DATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPTID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSTATUS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_CHARGEMAIN">
+        <String>INSERT INTO GHSF.GHSF_CHARGEMAIN
+ (VPRESC_TYPE, DPRESC_DATE, VDEPT_CODE, VACCTID, BBAIYAO, NHOSID, VRCPTID, VPATIENTID, VREGIST_ID, VPRESC_ID, VDIAGNOSE, NCOUNT, VUSERAGE, VDOCTOR_ID, VOPERATORID, VREFUNDEDRCPTNO, VACCTNO, VPRINTEDOPERATORID, VPRINTEDDATE, VPRINTEDRCPTNO, VINVOICENO, NSETTLE, VREMARKS, DCHARGE_DATE, VDEPTID, NSTATUS)
+ VALUES
+(:VPRESC_TYPE, :DPRESC_DATE, :VDEPT_CODE, :VACCTID, :BBAIYAO, :NHOSID, :VRCPTID, :VPATIENTID, :VREGIST_ID, :VPRESC_ID, :VDIAGNOSE, :NCOUNT, :VUSERAGE, :VDOCTOR_ID, :VOPERATORID, :VREFUNDEDRCPTNO, :VACCTNO, :VPRINTEDOPERATORID, :VPRINTEDDATE, :VPRINTEDRCPTNO, :VINVOICENO, :NSETTLE, :VREMARKS, :DCHARGE_DATE, :VDEPTID, :NSTATUS)</String>
+        <Param Name="VPRESC_TYPE" Column="VPRESC_TYPE" DataType="OracleType.VarChar" Length="12" Dir="IN" />
+        <Param Name="DPRESC_DATE" Column="DPRESC_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="BBAIYAO" Column="BBAIYAO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREGIST_ID" Column="VREGIST_ID" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VUSERAGE" Column="VUSERAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREFUNDEDRCPTNO" Column="VREFUNDEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTNO" Column="VACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPRINTEDOPERATORID" Column="VPRINTEDOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPRINTEDDATE" Column="VPRINTEDDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCHARGE_DATE" Column="DCHARGE_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSTATUS" Column="NSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_CHARGEMAIN">
+        <String>DELETE FROM GHSF.GHSF_CHARGEMAIN
+ WHERE
+ VRCPTID = :VRCPTID</String>
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_CHARGEMAIN">
+        <String>UPDATE GHSF.GHSF_CHARGEMAIN
+ SET
+ VPRESC_TYPE = :VPRESC_TYPE, DPRESC_DATE = :DPRESC_DATE, VDEPT_CODE = :VDEPT_CODE, VACCTID = :VACCTID, BBAIYAO = :BBAIYAO, NHOSID = :NHOSID, VRCPTID = :VRCPTID, VPATIENTID = :VPATIENTID, VREGIST_ID = :VREGIST_ID, VPRESC_ID = :VPRESC_ID, VDIAGNOSE = :VDIAGNOSE, NCOUNT = :NCOUNT, VUSERAGE = :VUSERAGE, VDOCTOR_ID = :VDOCTOR_ID, VOPERATORID = :VOPERATORID, VREFUNDEDRCPTNO = :VREFUNDEDRCPTNO, VACCTNO = :VACCTNO, VPRINTEDOPERATORID = :VPRINTEDOPERATORID, VPRINTEDDATE = :VPRINTEDDATE, VPRINTEDRCPTNO = :VPRINTEDRCPTNO, VINVOICENO = :VINVOICENO, NSETTLE = :NSETTLE, VREMARKS = :VREMARKS, DCHARGE_DATE = :DCHARGE_DATE, VDEPTID = :VDEPTID, NSTATUS = :NSTATUS 
+ WHERE
+ VRCPTID = :OLDVRCPTID</String>
+        <Param Name="VPRESC_TYPE" Column="VPRESC_TYPE" DataType="OracleType.VarChar" Length="12" Dir="IN" />
+        <Param Name="DPRESC_DATE" Column="DPRESC_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="BBAIYAO" Column="BBAIYAO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREGIST_ID" Column="VREGIST_ID" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VUSERAGE" Column="VUSERAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREFUNDEDRCPTNO" Column="VREFUNDEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTNO" Column="VACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPRINTEDOPERATORID" Column="VPRINTEDOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPRINTEDDATE" Column="VPRINTEDDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCHARGE_DATE" Column="DCHARGE_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSTATUS" Column="NSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_CHARGEMAIN">
+        <String>SELECT VPRESC_TYPE, DPRESC_DATE, VDEPT_CODE, VACCTID, BBAIYAO, NHOSID, VRCPTID, VPATIENTID, VREGIST_ID, VPRESC_ID, VDIAGNOSE, NCOUNT, VUSERAGE, VDOCTOR_ID, VOPERATORID, VREFUNDEDRCPTNO, VACCTNO, VPRINTEDOPERATORID, VPRINTEDDATE, VPRINTEDRCPTNO, VINVOICENO, NSETTLE, VREMARKS, DCHARGE_DATE, VDEPTID, NSTATUS
+ FROM GHSF.GHSF_CHARGEMAIN
+ WHERE
+ VRCPTID = :VRCPTID</String>
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_CHARGEMAIN
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_CHARGEMAIN">
+        <String>SELECT VPRESC_TYPE, DPRESC_DATE, VDEPT_CODE, VACCTID, BBAIYAO, NHOSID, VRCPTID, VPATIENTID, VREGIST_ID, VPRESC_ID, VDIAGNOSE, NCOUNT, VUSERAGE, VDOCTOR_ID, VOPERATORID, VREFUNDEDRCPTNO, VACCTNO, VPRINTEDOPERATORID, VPRINTEDDATE, VPRINTEDRCPTNO, VINVOICENO, NSETTLE, VREMARKS, DCHARGE_DATE, VDEPTID, NSTATUS
+ FROM GHSF.GHSF_CHARGEMAIN
+ WHERE
+ VRCPTID = :VRCPTID</String>
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_CHARGEMAIN
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_CHARGEMAIN">
+        <String>DELETE FROM GHSF.GHSF_CHARGEMAIN
+ WHERE
+ VRCPTID = :VRCPTID</String>
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_CHARGEMAIN">
+        <String>UPDATE GHSF.GHSF_CHARGEMAIN
+ SET
+ VPRESC_TYPE = :VPRESC_TYPE, DPRESC_DATE = :DPRESC_DATE, VDEPT_CODE = :VDEPT_CODE, VACCTID = :VACCTID, BBAIYAO = :BBAIYAO, NHOSID = :NHOSID, VRCPTID = :VRCPTID, VPATIENTID = :VPATIENTID, VREGIST_ID = :VREGIST_ID, VPRESC_ID = :VPRESC_ID, VDIAGNOSE = :VDIAGNOSE, NCOUNT = :NCOUNT, VUSERAGE = :VUSERAGE, VDOCTOR_ID = :VDOCTOR_ID, VOPERATORID = :VOPERATORID, VREFUNDEDRCPTNO = :VREFUNDEDRCPTNO, VACCTNO = :VACCTNO, VPRINTEDOPERATORID = :VPRINTEDOPERATORID, VPRINTEDDATE = :VPRINTEDDATE, VPRINTEDRCPTNO = :VPRINTEDRCPTNO, VINVOICENO = :VINVOICENO, NSETTLE = :NSETTLE, VREMARKS = :VREMARKS, DCHARGE_DATE = :DCHARGE_DATE, VDEPTID = :VDEPTID, NSTATUS = :NSTATUS 
+ WHERE
+ VRCPTID = :OLDVRCPTID</String>
+        <Param Name="VPRESC_TYPE" Column="VPRESC_TYPE" DataType="OracleType.VarChar" Length="12" Dir="IN" />
+        <Param Name="DPRESC_DATE" Column="DPRESC_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTID" Column="VACCTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="BBAIYAO" Column="BBAIYAO" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPATIENTID" Column="VPATIENTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREGIST_ID" Column="VREGIST_ID" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VDIAGNOSE" Column="VDIAGNOSE" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VUSERAGE" Column="VUSERAGE" DataType="OracleType.NVarChar" Length="10" Dir="IN" />
+        <Param Name="VDOCTOR_ID" Column="VDOCTOR_ID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VREFUNDEDRCPTNO" Column="VREFUNDEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VACCTNO" Column="VACCTNO" DataType="OracleType.VarChar" Length="6" Dir="IN" />
+        <Param Name="VPRINTEDOPERATORID" Column="VPRINTEDOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VPRINTEDDATE" Column="VPRINTEDDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VINVOICENO" Column="VINVOICENO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSETTLE" Column="NSETTLE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="DCHARGE_DATE" Column="DCHARGE_DATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VDEPTID" Column="VDEPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NSTATUS" Column="NSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="OLDVRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_CHARGEDETAIL</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_CHARGEDETAIL</TableName>
+      <Columns>
+        <Column Name="VRCPTDETAILID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VRCPTID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VPRESC_ID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VITEM_CODE" DataType="System.String" Length="30" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VITEM_NAME" DataType="System.String" Length="50" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VITEM_SPEC" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VUNITS" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCOUNT" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NDOSAGE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDOSAGE_UNITS" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VADMINISTRATION" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VFREQUENCY" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDAYS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPRICE" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NCOSTS" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VITEM_PRODUCT" DataType="System.String" Length="60" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSALESCALE" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCHARGEFLAG" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="1" IsKey="False" />
+        <Column Name="NMEDICINEFLAG" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="DMEDICINEDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NBACKDRUGFLAG" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="DBACKDRUGDATE" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHAVMED" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCT_MODE1" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NACCT_MODE2" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NACCT_MONEY1" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NACCT_MONEY2" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VPRINTEDRCPTNO" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VDRUG_STORAGE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NTOTALCHARGES" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VITEM_TYPE" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NPRESC" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NCOUNT" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VISSELF" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="VDEPT_CODE" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NDICTDETAIL_ID" DataType="System.String" Length="30" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_CHARGEDETAIL">
+        <String>INSERT INTO GHSF.GHSF_CHARGEDETAIL
+ (VRCPTDETAILID, VRCPTID, VPRESC_ID, VITEM_CODE, VITEM_NAME, VITEM_SPEC, VUNITS, NACCOUNT, NDOSAGE, VDOSAGE_UNITS, VADMINISTRATION, VFREQUENCY, NDAYS, NPRICE, NCOSTS, VITEM_PRODUCT, NSALESCALE, NCHARGEFLAG, NMEDICINEFLAG, DMEDICINEDATE, NBACKDRUGFLAG, DBACKDRUGDATE, NHAVMED, VREMARKS, NACCT_MODE1, NACCT_MODE2, NACCT_MONEY1, NACCT_MONEY2, VPRINTEDRCPTNO, VDRUG_STORAGE, NTOTALCHARGES, VITEM_TYPE, NPRESC, NCOUNT, VISSELF, VDEPT_CODE, NDICTDETAIL_ID)
+ VALUES
+(:VRCPTDETAILID, :VRCPTID, :VPRESC_ID, :VITEM_CODE, :VITEM_NAME, :VITEM_SPEC, :VUNITS, :NACCOUNT, :NDOSAGE, :VDOSAGE_UNITS, :VADMINISTRATION, :VFREQUENCY, :NDAYS, :NPRICE, :NCOSTS, :VITEM_PRODUCT, :NSALESCALE, :NCHARGEFLAG, :NMEDICINEFLAG, :DMEDICINEDATE, :NBACKDRUGFLAG, :DBACKDRUGDATE, :NHAVMED, :VREMARKS, :NACCT_MODE1, :NACCT_MODE2, :NACCT_MONEY1, :NACCT_MONEY2, :VPRINTEDRCPTNO, :VDRUG_STORAGE, :NTOTALCHARGES, :VITEM_TYPE, :NPRESC, :NCOUNT, :VISSELF, :VDEPT_CODE, :NDICTDETAIL_ID)</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VITEM_CODE" Column="VITEM_CODE" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+        <Param Name="VITEM_NAME" Column="VITEM_NAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VITEM_SPEC" Column="VITEM_SPEC" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VUNITS" Column="VUNITS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDOSAGE" Column="NDOSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDOSAGE_UNITS" Column="VDOSAGE_UNITS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VADMINISTRATION" Column="VADMINISTRATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VFREQUENCY" Column="VFREQUENCY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDAYS" Column="NDAYS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_PRODUCT" Column="VITEM_PRODUCT" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="NSALESCALE" Column="NSALESCALE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMEDICINEFLAG" Column="NMEDICINEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NBACKDRUGFLAG" Column="NBACKDRUGFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBACKDRUGDATE" Column="DBACKDRUGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NHAVMED" Column="NHAVMED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NACCT_MODE1" Column="NACCT_MODE1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MODE2" Column="NACCT_MODE2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY1" Column="NACCT_MONEY1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY2" Column="NACCT_MONEY2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDRUG_STORAGE" Column="VDRUG_STORAGE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTOTALCHARGES" Column="NTOTALCHARGES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_TYPE" Column="VITEM_TYPE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NPRESC" Column="NPRESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VISSELF" Column="VISSELF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICTDETAIL_ID" Column="NDICTDETAIL_ID" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_CHARGEDETAIL">
+        <String>DELETE FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE
+ VRCPTDETAILID = :VRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_CHARGEDETAIL">
+        <String>UPDATE GHSF.GHSF_CHARGEDETAIL
+ SET
+ VRCPTDETAILID = :VRCPTDETAILID, VRCPTID = :VRCPTID, VPRESC_ID = :VPRESC_ID, VITEM_CODE = :VITEM_CODE, VITEM_NAME = :VITEM_NAME, VITEM_SPEC = :VITEM_SPEC, VUNITS = :VUNITS, NACCOUNT = :NACCOUNT, NDOSAGE = :NDOSAGE, VDOSAGE_UNITS = :VDOSAGE_UNITS, VADMINISTRATION = :VADMINISTRATION, VFREQUENCY = :VFREQUENCY, NDAYS = :NDAYS, NPRICE = :NPRICE, NCOSTS = :NCOSTS, VITEM_PRODUCT = :VITEM_PRODUCT, NSALESCALE = :NSALESCALE, NCHARGEFLAG = :NCHARGEFLAG, NMEDICINEFLAG = :NMEDICINEFLAG, DMEDICINEDATE = :DMEDICINEDATE, NBACKDRUGFLAG = :NBACKDRUGFLAG, DBACKDRUGDATE = :DBACKDRUGDATE, NHAVMED = :NHAVMED, VREMARKS = :VREMARKS, NACCT_MODE1 = :NACCT_MODE1, NACCT_MODE2 = :NACCT_MODE2, NACCT_MONEY1 = :NACCT_MONEY1, NACCT_MONEY2 = :NACCT_MONEY2, VPRINTEDRCPTNO = :VPRINTEDRCPTNO, VDRUG_STORAGE = :VDRUG_STORAGE, NTOTALCHARGES = :NTOTALCHARGES, VITEM_TYPE = :VITEM_TYPE, NPRESC = :NPRESC, NCOUNT = :NCOUNT, VISSELF = :VISSELF, VDEPT_CODE = :VDEPT_CODE, NDICTDETAIL_ID = :NDICTDETAIL_ID 
+ WHERE
+ VRCPTDETAILID = :OLDVRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VITEM_CODE" Column="VITEM_CODE" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+        <Param Name="VITEM_NAME" Column="VITEM_NAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VITEM_SPEC" Column="VITEM_SPEC" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VUNITS" Column="VUNITS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDOSAGE" Column="NDOSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDOSAGE_UNITS" Column="VDOSAGE_UNITS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VADMINISTRATION" Column="VADMINISTRATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VFREQUENCY" Column="VFREQUENCY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDAYS" Column="NDAYS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_PRODUCT" Column="VITEM_PRODUCT" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="NSALESCALE" Column="NSALESCALE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMEDICINEFLAG" Column="NMEDICINEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NBACKDRUGFLAG" Column="NBACKDRUGFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBACKDRUGDATE" Column="DBACKDRUGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NHAVMED" Column="NHAVMED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NACCT_MODE1" Column="NACCT_MODE1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MODE2" Column="NACCT_MODE2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY1" Column="NACCT_MONEY1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY2" Column="NACCT_MONEY2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDRUG_STORAGE" Column="VDRUG_STORAGE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTOTALCHARGES" Column="NTOTALCHARGES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_TYPE" Column="VITEM_TYPE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NPRESC" Column="NPRESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VISSELF" Column="VISSELF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICTDETAIL_ID" Column="NDICTDETAIL_ID" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+        <Param Name="OLDVRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_CHARGEDETAIL">
+        <String>SELECT VRCPTDETAILID, VRCPTID, VPRESC_ID, VITEM_CODE, VITEM_NAME, VITEM_SPEC, VUNITS, NACCOUNT, NDOSAGE, VDOSAGE_UNITS, VADMINISTRATION, VFREQUENCY, NDAYS, NPRICE, NCOSTS, VITEM_PRODUCT, NSALESCALE, NCHARGEFLAG, NMEDICINEFLAG, DMEDICINEDATE, NBACKDRUGFLAG, DBACKDRUGDATE, NHAVMED, VREMARKS, NACCT_MODE1, NACCT_MODE2, NACCT_MONEY1, NACCT_MONEY2, VPRINTEDRCPTNO, VDRUG_STORAGE, NTOTALCHARGES, VITEM_TYPE, NPRESC, NCOUNT, VISSELF, VDEPT_CODE, NDICTDETAIL_ID
+ FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE
+ VRCPTDETAILID = :VRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_CHARGEDETAIL">
+        <String>SELECT VRCPTDETAILID, VRCPTID, VPRESC_ID, VITEM_CODE, VITEM_NAME, VITEM_SPEC, VUNITS, NACCOUNT, NDOSAGE, VDOSAGE_UNITS, VADMINISTRATION, VFREQUENCY, NDAYS, NPRICE, NCOSTS, VITEM_PRODUCT, NSALESCALE, NCHARGEFLAG, NMEDICINEFLAG, DMEDICINEDATE, NBACKDRUGFLAG, DBACKDRUGDATE, NHAVMED, VREMARKS, NACCT_MODE1, NACCT_MODE2, NACCT_MONEY1, NACCT_MONEY2, VPRINTEDRCPTNO, VDRUG_STORAGE, NTOTALCHARGES, VITEM_TYPE, NPRESC, NCOUNT, VISSELF, VDEPT_CODE, NDICTDETAIL_ID
+ FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE
+ VRCPTDETAILID = :VRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_CHARGEDETAIL">
+        <String>DELETE FROM GHSF.GHSF_CHARGEDETAIL
+ WHERE
+ VRCPTDETAILID = :VRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_CHARGEDETAIL">
+        <String>UPDATE GHSF.GHSF_CHARGEDETAIL
+ SET
+ VRCPTDETAILID = :VRCPTDETAILID, VRCPTID = :VRCPTID, VPRESC_ID = :VPRESC_ID, VITEM_CODE = :VITEM_CODE, VITEM_NAME = :VITEM_NAME, VITEM_SPEC = :VITEM_SPEC, VUNITS = :VUNITS, NACCOUNT = :NACCOUNT, NDOSAGE = :NDOSAGE, VDOSAGE_UNITS = :VDOSAGE_UNITS, VADMINISTRATION = :VADMINISTRATION, VFREQUENCY = :VFREQUENCY, NDAYS = :NDAYS, NPRICE = :NPRICE, NCOSTS = :NCOSTS, VITEM_PRODUCT = :VITEM_PRODUCT, NSALESCALE = :NSALESCALE, NCHARGEFLAG = :NCHARGEFLAG, NMEDICINEFLAG = :NMEDICINEFLAG, DMEDICINEDATE = :DMEDICINEDATE, NBACKDRUGFLAG = :NBACKDRUGFLAG, DBACKDRUGDATE = :DBACKDRUGDATE, NHAVMED = :NHAVMED, VREMARKS = :VREMARKS, NACCT_MODE1 = :NACCT_MODE1, NACCT_MODE2 = :NACCT_MODE2, NACCT_MONEY1 = :NACCT_MONEY1, NACCT_MONEY2 = :NACCT_MONEY2, VPRINTEDRCPTNO = :VPRINTEDRCPTNO, VDRUG_STORAGE = :VDRUG_STORAGE, NTOTALCHARGES = :NTOTALCHARGES, VITEM_TYPE = :VITEM_TYPE, NPRESC = :NPRESC, NCOUNT = :NCOUNT, VISSELF = :VISSELF, VDEPT_CODE = :VDEPT_CODE, NDICTDETAIL_ID = :NDICTDETAIL_ID 
+ WHERE
+ VRCPTDETAILID = :OLDVRCPTDETAILID</String>
+        <Param Name="VRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VRCPTID" Column="VRCPTID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VPRESC_ID" Column="VPRESC_ID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VITEM_CODE" Column="VITEM_CODE" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+        <Param Name="VITEM_NAME" Column="VITEM_NAME" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VITEM_SPEC" Column="VITEM_SPEC" DataType="OracleType.NVarChar" Length="20" Dir="IN" />
+        <Param Name="VUNITS" Column="VUNITS" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NACCOUNT" Column="NACCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NDOSAGE" Column="NDOSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDOSAGE_UNITS" Column="VDOSAGE_UNITS" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VADMINISTRATION" Column="VADMINISTRATION" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VFREQUENCY" Column="VFREQUENCY" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDAYS" Column="NDAYS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPRICE" Column="NPRICE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOSTS" Column="NCOSTS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_PRODUCT" Column="VITEM_PRODUCT" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="NSALESCALE" Column="NSALESCALE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCHARGEFLAG" Column="NCHARGEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMEDICINEFLAG" Column="NMEDICINEFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DMEDICINEDATE" Column="DMEDICINEDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NBACKDRUGFLAG" Column="NBACKDRUGFLAG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DBACKDRUGDATE" Column="DBACKDRUGDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="NHAVMED" Column="NHAVMED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="NACCT_MODE1" Column="NACCT_MODE1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MODE2" Column="NACCT_MODE2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY1" Column="NACCT_MONEY1" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NACCT_MONEY2" Column="NACCT_MONEY2" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VPRINTEDRCPTNO" Column="VPRINTEDRCPTNO" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDRUG_STORAGE" Column="VDRUG_STORAGE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NTOTALCHARGES" Column="NTOTALCHARGES" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VITEM_TYPE" Column="VITEM_TYPE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NPRESC" Column="NPRESC" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NCOUNT" Column="NCOUNT" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VISSELF" Column="VISSELF" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPT_CODE" Column="VDEPT_CODE" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NDICTDETAIL_ID" Column="NDICTDETAIL_ID" DataType="OracleType.VarChar" Length="30" Dir="IN" />
+        <Param Name="OLDVRCPTDETAILID" Column="VRCPTDETAILID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>GHSF_NOTEMANAGE</EntityTypeName>
+    <MainTable>
+      <TableName>GHSF.GHSF_NOTEMANAGE</TableName>
+      <Columns>
+        <Column Name="VNOTEMANAGEID" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="NPIAOJVLB" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NQISHIH" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NZHONGZHIH" DataType="System.Decimal" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NYISHIYH" DataType="System.Decimal" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VLINGYONGR" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VJINGBANR" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DLINGYONGRQ" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VREMARKS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VOPERATORID" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="DOPERATORDATE" DataType="System.DateTime" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertGHSF.GHSF_NOTEMANAGE">
+        <String>INSERT INTO GHSF.GHSF_NOTEMANAGE
+ (VNOTEMANAGEID, NPIAOJVLB, NQISHIH, NZHONGZHIH, NYISHIYH, VLINGYONGR, VJINGBANR, DLINGYONGRQ, VREMARKS, VOPERATORID, DOPERATORDATE)
+ VALUES
+(:VNOTEMANAGEID, :NPIAOJVLB, :NQISHIH, :NZHONGZHIH, :NYISHIYH, :VLINGYONGR, :VJINGBANR, :DLINGYONGRQ, :VREMARKS, :VOPERATORID, :DOPERATORDATE)</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NPIAOJVLB" Column="NPIAOJVLB" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NQISHIH" Column="NQISHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZHONGZHIH" Column="NZHONGZHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NYISHIYH" Column="NYISHIYH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VLINGYONGR" Column="VLINGYONGR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJINGBANR" Column="VJINGBANR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DLINGYONGRQ" Column="DLINGYONGRQ" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DOPERATORDATE" Column="DOPERATORDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteGHSF.GHSF_NOTEMANAGE">
+        <String>DELETE FROM GHSF.GHSF_NOTEMANAGE
+ WHERE
+ VNOTEMANAGEID = :VNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_NOTEMANAGE">
+        <String>UPDATE GHSF.GHSF_NOTEMANAGE
+ SET
+ VNOTEMANAGEID = :VNOTEMANAGEID, NPIAOJVLB = :NPIAOJVLB, NQISHIH = :NQISHIH, NZHONGZHIH = :NZHONGZHIH, NYISHIYH = :NYISHIYH, VLINGYONGR = :VLINGYONGR, VJINGBANR = :VJINGBANR, DLINGYONGRQ = :DLINGYONGRQ, VREMARKS = :VREMARKS, VOPERATORID = :VOPERATORID, DOPERATORDATE = :DOPERATORDATE 
+ WHERE
+ VNOTEMANAGEID = :OLDVNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NPIAOJVLB" Column="NPIAOJVLB" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NQISHIH" Column="NQISHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZHONGZHIH" Column="NZHONGZHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NYISHIYH" Column="NYISHIYH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VLINGYONGR" Column="VLINGYONGR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJINGBANR" Column="VJINGBANR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DLINGYONGRQ" Column="DLINGYONGRQ" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DOPERATORDATE" Column="DOPERATORDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="OLDVNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDGHSF.GHSF_NOTEMANAGE">
+        <String>SELECT VNOTEMANAGEID, NPIAOJVLB, NQISHIH, NZHONGZHIH, NYISHIYH, VLINGYONGR, VJINGBANR, DLINGYONGRQ, VREMARKS, VOPERATORID, DOPERATORDATE
+ FROM GHSF.GHSF_NOTEMANAGE
+ WHERE
+ VNOTEMANAGEID = :VNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_NOTEMANAGE
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDGHSF.GHSF_NOTEMANAGE">
+        <String>SELECT VNOTEMANAGEID, NPIAOJVLB, NQISHIH, NZHONGZHIH, NYISHIYH, VLINGYONGR, VJINGBANR, DLINGYONGRQ, VREMARKS, VOPERATORID, DOPERATORDATE
+ FROM GHSF.GHSF_NOTEMANAGE
+ WHERE
+ VNOTEMANAGEID = :VNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM GHSF.GHSF_NOTEMANAGE
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteGHSF.GHSF_NOTEMANAGE">
+        <String>DELETE FROM GHSF.GHSF_NOTEMANAGE
+ WHERE
+ VNOTEMANAGEID = :VNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateGHSF.GHSF_NOTEMANAGE">
+        <String>UPDATE GHSF.GHSF_NOTEMANAGE
+ SET
+ VNOTEMANAGEID = :VNOTEMANAGEID, NPIAOJVLB = :NPIAOJVLB, NQISHIH = :NQISHIH, NZHONGZHIH = :NZHONGZHIH, NYISHIYH = :NYISHIYH, VLINGYONGR = :VLINGYONGR, VJINGBANR = :VJINGBANR, DLINGYONGRQ = :DLINGYONGRQ, VREMARKS = :VREMARKS, VOPERATORID = :VOPERATORID, DOPERATORDATE = :DOPERATORDATE 
+ WHERE
+ VNOTEMANAGEID = :OLDVNOTEMANAGEID</String>
+        <Param Name="VNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NPIAOJVLB" Column="NPIAOJVLB" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NQISHIH" Column="NQISHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NZHONGZHIH" Column="NZHONGZHIH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NYISHIYH" Column="NYISHIYH" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VLINGYONGR" Column="VLINGYONGR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJINGBANR" Column="VJINGBANR" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DLINGYONGRQ" Column="DLINGYONGRQ" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VREMARKS" Column="VREMARKS" DataType="OracleType.NVarChar" Length="50" Dir="IN" />
+        <Param Name="VOPERATORID" Column="VOPERATORID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="DOPERATORDATE" Column="DOPERATORDATE" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="OLDVNOTEMANAGEID" Column="VNOTEMANAGEID" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>XT_STAFF</EntityTypeName>
+    <MainTable>
+      <TableName>XT.XT_STAFF</TableName>
+      <Columns>
+        <Column Name="VSTAFFCODE" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VSTAFFNAME" DataType="System.String" Length="60" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="PINYINMA" DataType="System.String" Length="120" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="WUBIMA" DataType="System.String" Length="60" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VLOGINUSERNAME" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VLOGINPASSWORD" DataType="System.String" Length="100" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NSTAFFSTATUS" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="1" IsKey="False" />
+        <Column Name="NROLEID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPARTCODE" DataType="System.String" Length="10" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NJOBID" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NPROFESSIONID" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NOPHZID" DataType="System.Int32" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="NISDUMA" DataType="System.Int16" Length="-1" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="DFHTIME" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="DTHTIME" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VTMETHOD" DataType="System.String" Length="100" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSCHOOL" DataType="System.String" Length="40" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSEX" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NBIRTHDAY" DataType="System.DateTime" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VMINZU" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VJIGUAN" DataType="System.String" Length="40" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VXUELI" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NISKSS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NSENDMSG" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VYBNO" DataType="System.String" Length="32" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSXYS" DataType="System.String" Length="60" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSEALCODE" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="INVOICE_KEY" DataType="System.String" Length="200" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertXT.XT_STAFF">
+        <String>INSERT INTO XT.XT_STAFF
+ (VSTAFFCODE, VSTAFFNAME, PINYINMA, WUBIMA, VLOGINUSERNAME, VLOGINPASSWORD, NSTAFFSTATUS, NROLEID, VDEPARTCODE, NJOBID, NPROFESSIONID, NOPHZID, NISDUMA, DFHTIME, DTHTIME, VTMETHOD, VSCHOOL, NSEX, NBIRTHDAY, VMINZU, VJIGUAN, VXUELI, NISKSS, NSENDMSG, NHOSID, VYBNO, VSXYS, VSEALCODE, INVOICE_KEY)
+ VALUES
+(:VSTAFFCODE, :VSTAFFNAME, :PINYINMA, :WUBIMA, :VLOGINUSERNAME, :VLOGINPASSWORD, :NSTAFFSTATUS, :NROLEID, :VDEPARTCODE, :NJOBID, :NPROFESSIONID, :NOPHZID, :NISDUMA, :DFHTIME, :DTHTIME, :VTMETHOD, :VSCHOOL, :NSEX, :NBIRTHDAY, :VMINZU, :VJIGUAN, :VXUELI, :NISKSS, :NSENDMSG, :NHOSID, :VYBNO, :VSXYS, :VSEALCODE, :INVOICE_KEY)</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTAFFNAME" Column="VSTAFFNAME" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="120" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VLOGINUSERNAME" Column="VLOGINUSERNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLOGINPASSWORD" Column="VLOGINPASSWORD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NSTAFFSTATUS" Column="NSTAFFSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NROLEID" Column="NROLEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NJOBID" Column="NJOBID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NISDUMA" Column="NISDUMA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DFHTIME" Column="DFHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DTHTIME" Column="DTHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VTMETHOD" Column="VTMETHOD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VSCHOOL" Column="VSCHOOL" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBIRTHDAY" Column="NBIRTHDAY" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VMINZU" Column="VMINZU" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJIGUAN" Column="VJIGUAN" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="VXUELI" Column="VXUELI" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NISKSS" Column="NISKSS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSENDMSG" Column="NSENDMSG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBNO" Column="VYBNO" DataType="OracleType.VarChar" Length="32" Dir="IN" />
+        <Param Name="VSXYS" Column="VSXYS" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="VSEALCODE" Column="VSEALCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="INVOICE_KEY" Column="INVOICE_KEY" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteXT.XT_STAFF">
+        <String>DELETE FROM XT.XT_STAFF
+ WHERE
+ VSTAFFCODE = :VSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateXT.XT_STAFF">
+        <String>UPDATE XT.XT_STAFF
+ SET
+ VSTAFFCODE = :VSTAFFCODE, VSTAFFNAME = :VSTAFFNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, VLOGINUSERNAME = :VLOGINUSERNAME, VLOGINPASSWORD = :VLOGINPASSWORD, NSTAFFSTATUS = :NSTAFFSTATUS, NROLEID = :NROLEID, VDEPARTCODE = :VDEPARTCODE, NJOBID = :NJOBID, NPROFESSIONID = :NPROFESSIONID, NOPHZID = :NOPHZID, NISDUMA = :NISDUMA, DFHTIME = :DFHTIME, DTHTIME = :DTHTIME, VTMETHOD = :VTMETHOD, VSCHOOL = :VSCHOOL, NSEX = :NSEX, NBIRTHDAY = :NBIRTHDAY, VMINZU = :VMINZU, VJIGUAN = :VJIGUAN, VXUELI = :VXUELI, NISKSS = :NISKSS, NSENDMSG = :NSENDMSG, NHOSID = :NHOSID, VYBNO = :VYBNO, VSXYS = :VSXYS, VSEALCODE = :VSEALCODE, INVOICE_KEY = :INVOICE_KEY 
+ WHERE
+ VSTAFFCODE = :OLDVSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTAFFNAME" Column="VSTAFFNAME" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="120" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VLOGINUSERNAME" Column="VLOGINUSERNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLOGINPASSWORD" Column="VLOGINPASSWORD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NSTAFFSTATUS" Column="NSTAFFSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NROLEID" Column="NROLEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NJOBID" Column="NJOBID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NISDUMA" Column="NISDUMA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DFHTIME" Column="DFHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DTHTIME" Column="DTHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VTMETHOD" Column="VTMETHOD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VSCHOOL" Column="VSCHOOL" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBIRTHDAY" Column="NBIRTHDAY" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VMINZU" Column="VMINZU" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJIGUAN" Column="VJIGUAN" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="VXUELI" Column="VXUELI" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NISKSS" Column="NISKSS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSENDMSG" Column="NSENDMSG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBNO" Column="VYBNO" DataType="OracleType.VarChar" Length="32" Dir="IN" />
+        <Param Name="VSXYS" Column="VSXYS" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="VSEALCODE" Column="VSEALCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="INVOICE_KEY" Column="INVOICE_KEY" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+        <Param Name="OLDVSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDXT.XT_STAFF">
+        <String>SELECT VSTAFFCODE, VSTAFFNAME, PINYINMA, WUBIMA, VLOGINUSERNAME, VLOGINPASSWORD, NSTAFFSTATUS, NROLEID, VDEPARTCODE, NJOBID, NPROFESSIONID, NOPHZID, NISDUMA, DFHTIME, DTHTIME, VTMETHOD, VSCHOOL, NSEX, NBIRTHDAY, VMINZU, VJIGUAN, VXUELI, NISKSS, NSENDMSG, NHOSID, VYBNO, VSXYS, VSEALCODE, INVOICE_KEY
+ FROM XT.XT_STAFF
+ WHERE
+ VSTAFFCODE = :VSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM XT.XT_STAFF
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDXT.XT_STAFF">
+        <String>SELECT VSTAFFCODE, VSTAFFNAME, PINYINMA, WUBIMA, VLOGINUSERNAME, VLOGINPASSWORD, NSTAFFSTATUS, NROLEID, VDEPARTCODE, NJOBID, NPROFESSIONID, NOPHZID, NISDUMA, DFHTIME, DTHTIME, VTMETHOD, VSCHOOL, NSEX, NBIRTHDAY, VMINZU, VJIGUAN, VXUELI, NISKSS, NSENDMSG, NHOSID, VYBNO, VSXYS, VSEALCODE, INVOICE_KEY
+ FROM XT.XT_STAFF
+ WHERE
+ VSTAFFCODE = :VSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM XT.XT_STAFF
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteXT.XT_STAFF">
+        <String>DELETE FROM XT.XT_STAFF
+ WHERE
+ VSTAFFCODE = :VSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateXT.XT_STAFF">
+        <String>UPDATE XT.XT_STAFF
+ SET
+ VSTAFFCODE = :VSTAFFCODE, VSTAFFNAME = :VSTAFFNAME, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, VLOGINUSERNAME = :VLOGINUSERNAME, VLOGINPASSWORD = :VLOGINPASSWORD, NSTAFFSTATUS = :NSTAFFSTATUS, NROLEID = :NROLEID, VDEPARTCODE = :VDEPARTCODE, NJOBID = :NJOBID, NPROFESSIONID = :NPROFESSIONID, NOPHZID = :NOPHZID, NISDUMA = :NISDUMA, DFHTIME = :DFHTIME, DTHTIME = :DTHTIME, VTMETHOD = :VTMETHOD, VSCHOOL = :VSCHOOL, NSEX = :NSEX, NBIRTHDAY = :NBIRTHDAY, VMINZU = :VMINZU, VJIGUAN = :VJIGUAN, VXUELI = :VXUELI, NISKSS = :NISKSS, NSENDMSG = :NSENDMSG, NHOSID = :NHOSID, VYBNO = :VYBNO, VSXYS = :VSXYS, VSEALCODE = :VSEALCODE, INVOICE_KEY = :INVOICE_KEY 
+ WHERE
+ VSTAFFCODE = :OLDVSTAFFCODE</String>
+        <Param Name="VSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTAFFNAME" Column="VSTAFFNAME" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="120" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="60" Dir="IN" />
+        <Param Name="VLOGINUSERNAME" Column="VLOGINUSERNAME" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VLOGINPASSWORD" Column="VLOGINPASSWORD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="NSTAFFSTATUS" Column="NSTAFFSTATUS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NROLEID" Column="NROLEID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NJOBID" Column="NJOBID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NPROFESSIONID" Column="NPROFESSIONID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NISDUMA" Column="NISDUMA" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="DFHTIME" Column="DFHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="DTHTIME" Column="DTHTIME" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VTMETHOD" Column="VTMETHOD" DataType="OracleType.VarChar" Length="100" Dir="IN" />
+        <Param Name="VSCHOOL" Column="VSCHOOL" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="NSEX" Column="NSEX" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBIRTHDAY" Column="NBIRTHDAY" DataType="OracleType.DateTime" Length="-1" Dir="IN" />
+        <Param Name="VMINZU" Column="VMINZU" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VJIGUAN" Column="VJIGUAN" DataType="OracleType.VarChar" Length="40" Dir="IN" />
+        <Param Name="VXUELI" Column="VXUELI" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NISKSS" Column="NISKSS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NSENDMSG" Column="NSENDMSG" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBNO" Column="VYBNO" DataType="OracleType.VarChar" Length="32" Dir="IN" />
+        <Param Name="VSXYS" Column="VSXYS" DataType="OracleType.NVarChar" Length="60" Dir="IN" />
+        <Param Name="VSEALCODE" Column="VSEALCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="INVOICE_KEY" Column="INVOICE_KEY" DataType="OracleType.VarChar" Length="200" Dir="IN" />
+        <Param Name="OLDVSTAFFCODE" Column="VSTAFFCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+  <Entity>
+    <EntityTypeName>XT_DICDEPART</EntityTypeName>
+    <MainTable>
+      <TableName>XT.XT_DICDEPART</TableName>
+      <Columns>
+        <Column Name="VHOSDISTRICTID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPARTCODE" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="" IsKey="True" />
+        <Column Name="VDEPARTNAME" DataType="System.String" Length="40" AllowDBNull="False" DefaultValue="" IsKey="False" />
+        <Column Name="VPARENTCODE" DataType="System.String" Length="20" AllowDBNull="False" DefaultValue="-1" IsKey="False" />
+        <Column Name="NDEPARTORDER" DataType="System.Int16" Length="-1" AllowDBNull="False" DefaultValue="0" IsKey="False" />
+        <Column Name="PINYINMA" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="WUBIMA" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VDEPARTADDRESS" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NISDISABLED" DataType="System.Int16" Length="-1" AllowDBNull="False" DefaultValue="0" IsKey="False" />
+        <Column Name="NMESSAGE" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="NBEDNUM" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="-1" IsKey="False" />
+        <Column Name="NHOSID" DataType="System.Int32" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NALLOWARREARS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="0" IsKey="False" />
+        <Column Name="ISZJKS" DataType="System.Int16" Length="-1" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VYBCODE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VNHCODE" DataType="System.String" Length="10" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="NOPHZID" DataType="System.String" Length="20" AllowDBNull="True" DefaultValue="" IsKey="False" />
+        <Column Name="VSTORAGEID" DataType="System.String" Length="50" AllowDBNull="True" DefaultValue="" IsKey="False" />
+      </Columns>
+    </MainTable>
+    <RefTables />
+    <Sqls>
+      <Sql Name="InsertXT.XT_DICDEPART">
+        <String>INSERT INTO XT.XT_DICDEPART
+ (VHOSDISTRICTID, VDEPARTCODE, VDEPARTNAME, VPARENTCODE, NDEPARTORDER, PINYINMA, WUBIMA, VDEPARTADDRESS, NISDISABLED, NMESSAGE, NBEDNUM, NHOSID, NALLOWARREARS, ISZJKS, VYBCODE, VNHCODE, NOPHZID, VSTORAGEID)
+ VALUES
+(:VHOSDISTRICTID, :VDEPARTCODE, :VDEPARTNAME, :VPARENTCODE, :NDEPARTORDER, :PINYINMA, :WUBIMA, :VDEPARTADDRESS, :NISDISABLED, :NMESSAGE, :NBEDNUM, :NHOSID, :NALLOWARREARS, :ISZJKS, :VYBCODE, :VNHCODE, :NOPHZID, :VSTORAGEID)</String>
+        <Param Name="VHOSDISTRICTID" Column="VHOSDISTRICTID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEPARTNAME" Column="VDEPARTNAME" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="VPARENTCODE" Column="VPARENTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDEPARTORDER" Column="NDEPARTORDER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDEPARTADDRESS" Column="VDEPARTADDRESS" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NISDISABLED" Column="NISDISABLED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMESSAGE" Column="NMESSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBEDNUM" Column="NBEDNUM" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NALLOWARREARS" Column="NALLOWARREARS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="ISZJKS" Column="ISZJKS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBCODE" Column="VYBCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNHCODE" Column="VNHCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTORAGEID" Column="VSTORAGEID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+      </Sql>
+      <Sql Name="DeleteXT.XT_DICDEPART">
+        <String>DELETE FROM XT.XT_DICDEPART
+ WHERE
+ VDEPARTCODE = :VDEPARTCODE</String>
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateXT.XT_DICDEPART">
+        <String>UPDATE XT.XT_DICDEPART
+ SET
+ VHOSDISTRICTID = :VHOSDISTRICTID, VDEPARTCODE = :VDEPARTCODE, VDEPARTNAME = :VDEPARTNAME, VPARENTCODE = :VPARENTCODE, NDEPARTORDER = :NDEPARTORDER, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, VDEPARTADDRESS = :VDEPARTADDRESS, NISDISABLED = :NISDISABLED, NMESSAGE = :NMESSAGE, NBEDNUM = :NBEDNUM, NHOSID = :NHOSID, NALLOWARREARS = :NALLOWARREARS, ISZJKS = :ISZJKS, VYBCODE = :VYBCODE, VNHCODE = :VNHCODE, NOPHZID = :NOPHZID, VSTORAGEID = :VSTORAGEID 
+ WHERE
+ VDEPARTCODE = :OLDVDEPARTCODE</String>
+        <Param Name="VHOSDISTRICTID" Column="VHOSDISTRICTID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEPARTNAME" Column="VDEPARTNAME" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="VPARENTCODE" Column="VPARENTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDEPARTORDER" Column="NDEPARTORDER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDEPARTADDRESS" Column="VDEPARTADDRESS" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NISDISABLED" Column="NISDISABLED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMESSAGE" Column="NMESSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBEDNUM" Column="NBEDNUM" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NALLOWARREARS" Column="NALLOWARREARS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="ISZJKS" Column="ISZJKS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBCODE" Column="VYBCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNHCODE" Column="VNHCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTORAGEID" Column="VSTORAGEID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="OLDVDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectByIDXT.XT_DICDEPART">
+        <String>SELECT VHOSDISTRICTID, VDEPARTCODE, VDEPARTNAME, VPARENTCODE, NDEPARTORDER, PINYINMA, WUBIMA, VDEPARTADDRESS, NISDISABLED, NMESSAGE, NBEDNUM, NHOSID, NALLOWARREARS, ISZJKS, VYBCODE, VNHCODE, NOPHZID, VSTORAGEID
+ FROM XT.XT_DICDEPART
+ WHERE
+ VDEPARTCODE = :VDEPARTCODE</String>
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM XT.XT_DICDEPART
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </Sqls>
+    <Relations />
+    <EntityMemo>
+    </EntityMemo>
+    <SqlSelects />
+    <SqlStrongSelects>
+      <Sql Name="SelectByIDXT.XT_DICDEPART">
+        <String>SELECT VHOSDISTRICTID, VDEPARTCODE, VDEPARTNAME, VPARENTCODE, NDEPARTORDER, PINYINMA, WUBIMA, VDEPARTADDRESS, NISDISABLED, NMESSAGE, NBEDNUM, NHOSID, NALLOWARREARS, ISZJKS, VYBCODE, VNHCODE, NOPHZID, VSTORAGEID
+ FROM XT.XT_DICDEPART
+ WHERE
+ VDEPARTCODE = :VDEPARTCODE</String>
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="SelectAll">
+        <String>SELECT * FROM XT.XT_DICDEPART
+ WHERE 1=1</String>
+        <SqlMemo>
+        </SqlMemo>
+      </Sql>
+    </SqlStrongSelects>
+    <ProcedureSqls />
+    <UpdateSqls>
+      <Sql Name="DeleteXT.XT_DICDEPART">
+        <String>DELETE FROM XT.XT_DICDEPART
+ WHERE
+ VDEPARTCODE = :VDEPARTCODE</String>
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+      <Sql Name="UpdateXT.XT_DICDEPART">
+        <String>UPDATE XT.XT_DICDEPART
+ SET
+ VHOSDISTRICTID = :VHOSDISTRICTID, VDEPARTCODE = :VDEPARTCODE, VDEPARTNAME = :VDEPARTNAME, VPARENTCODE = :VPARENTCODE, NDEPARTORDER = :NDEPARTORDER, PINYINMA = :PINYINMA, WUBIMA = :WUBIMA, VDEPARTADDRESS = :VDEPARTADDRESS, NISDISABLED = :NISDISABLED, NMESSAGE = :NMESSAGE, NBEDNUM = :NBEDNUM, NHOSID = :NHOSID, NALLOWARREARS = :NALLOWARREARS, ISZJKS = :ISZJKS, VYBCODE = :VYBCODE, VNHCODE = :VNHCODE, NOPHZID = :NOPHZID, VSTORAGEID = :VSTORAGEID 
+ WHERE
+ VDEPARTCODE = :OLDVDEPARTCODE</String>
+        <Param Name="VHOSDISTRICTID" Column="VHOSDISTRICTID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VDEPARTNAME" Column="VDEPARTNAME" DataType="OracleType.NVarChar" Length="40" Dir="IN" />
+        <Param Name="VPARENTCODE" Column="VPARENTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="NDEPARTORDER" Column="NDEPARTORDER" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="PINYINMA" Column="PINYINMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="WUBIMA" Column="WUBIMA" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VDEPARTADDRESS" Column="VDEPARTADDRESS" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="NISDISABLED" Column="NISDISABLED" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NMESSAGE" Column="NMESSAGE" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NBEDNUM" Column="NBEDNUM" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NHOSID" Column="NHOSID" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="NALLOWARREARS" Column="NALLOWARREARS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="ISZJKS" Column="ISZJKS" DataType="OracleType.Number" Length="-1" Dir="IN" />
+        <Param Name="VYBCODE" Column="VYBCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="VNHCODE" Column="VNHCODE" DataType="OracleType.VarChar" Length="10" Dir="IN" />
+        <Param Name="NOPHZID" Column="NOPHZID" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+        <Param Name="VSTORAGEID" Column="VSTORAGEID" DataType="OracleType.VarChar" Length="50" Dir="IN" />
+        <Param Name="OLDVDEPARTCODE" Column="VDEPARTCODE" DataType="OracleType.VarChar" Length="20" Dir="IN" />
+      </Sql>
+    </UpdateSqls>
+  </Entity>
+</EtpConfig>

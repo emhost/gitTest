@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{306596C9-2AF5-4F57-A0E4-1A14F3045C3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OracleTest</RootNamespace>
+    <AssemblyName>OracleTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoenixDataBaseConnect, Version=3.16.10.25, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PhoenixDataBaseConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoenixDataBaseOperate, Version=3.17.4.24, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PhoenixDataBaseOperate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EntityConverter.cs" />
+    <Compile Include="EntityView\HY_DEPARTMENT.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\HY_STAFF.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_COST_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_DAOHANG_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_EXAMITEMS_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_LABITEMS_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_MZ_PRESCDETAIL.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_MZ_PRESCMASTER.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_PATIENT_BASIC_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EntityView\V_PATIENT_ZY_INFO.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\CHAT_RECORD_BaseDAO.cs" />
+    <Compile Include="Entity\CHAT_RECORD_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\CHAT_RECORD_SqlStruct.cs" />
+    <Compile Include="Entity\Dao\HY_DAOHANG_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_STAFF.cs" />
+    <Compile Include="Entity\Dao\HY_V_COST_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_V_EXAMITEMS_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_V_LABITEMS_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_V_PATIENT_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_V_PATIENT_ZY_INFO.cs" />
+    <Compile Include="Entity\Dao\HY_V_PRESCDETAIL.cs" />
+    <Compile Include="Entity\Dao\HY_V_PRESCMASTER.cs" />
+    <Compile Include="Entity\Dao\ViewEntity.cs" />
+    <Compile Include="Entity\DEPARTINTRODUCTION_BaseDAO.cs" />
+    <Compile Include="Entity\DEPARTINTRODUCTION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\DEPARTINTRODUCTION_SqlStruct.cs" />
+    <Compile Include="Entity\DOCTORINTRODUCTION_BaseDAO.cs" />
+    <Compile Include="Entity\DOCTORINTRODUCTION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\DOCTORINTRODUCTION_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_CHARGEDETAIL_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_CHARGEDETAIL_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_CHARGEDETAIL_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_CHARGEMAIN_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_CHARGEMAIN_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_CHARGEMAIN_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_JZ_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_JZ_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_JZ_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_NOTEMANAGE_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_NOTEMANAGE_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_NOTEMANAGE_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_PATIENTINFO_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_PATIENTINFO_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_PATIENTINFO_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_REGHIS_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_REGHIS_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_REGHIS_SqlStruct.cs" />
+    <Compile Include="Entity\GHSF_REGPLAN_BaseDAO.cs" />
+    <Compile Include="Entity\GHSF_REGPLAN_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\GHSF_REGPLAN_SqlStruct.cs" />
+    <Compile Include="Entity\HOSPITALINTRODUCTION_BaseDAO.cs" />
+    <Compile Include="Entity\HOSPITALINTRODUCTION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\HOSPITALINTRODUCTION_SqlStruct.cs" />
+    <Compile Include="Entity\hyApp_BaseRules.cs" />
+    <Compile Include="Entity\hyApp_StaticRules.cs" />
+    <Compile Include="Entity\HYGHSF_BaseRules.cs" />
+    <Compile Include="Entity\HYGHSF_StaticRules.cs" />
+    <Compile Include="Entity\HYHISAPP_BaseRules.cs" />
+    <Compile Include="Entity\HYHISAPP_StaticRules.cs" />
+    <Compile Include="Entity\IN_NAVIGATION_BaseDAO.cs" />
+    <Compile Include="Entity\IN_NAVIGATION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\IN_NAVIGATION_DETAILS_BaseDAO.cs" />
+    <Compile Include="Entity\IN_NAVIGATION_DETAILS_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\IN_NAVIGATION_DETAILS_SqlStruct.cs" />
+    <Compile Include="Entity\IN_NAVIGATION_SqlStruct.cs" />
+    <Compile Include="Entity\JZHZ_BaseDAO.cs" />
+    <Compile Include="Entity\JZHZ_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\JZHZ_RELATION_BaseDAO.cs" />
+    <Compile Include="Entity\JZHZ_RELATION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\JZHZ_RELATION_SqlStruct.cs" />
+    <Compile Include="Entity\JZHZ_SqlStruct.cs" />
+    <Compile Include="Entity\PAYMENT_BaseDAO.cs" />
+    <Compile Include="Entity\PAYMENT_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\PAYMENT_DETAIL_BaseDAO.cs" />
+    <Compile Include="Entity\PAYMENT_DETAIL_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\PAYMENT_DETAIL_SqlStruct.cs" />
+    <Compile Include="Entity\PAYMENT_SqlStruct.cs" />
+    <Compile Include="Entity\SIGNIN_BaseDAO.cs" />
+    <Compile Include="Entity\SIGNIN_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\SIGNIN_SqlStruct.cs" />
+    <Compile Include="Entity\TJ_DICNODRUGITEM_BaseDAO.cs" />
+    <Compile Include="Entity\TJ_DICNODRUGITEM_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\TJ_DICNODRUGITEM_SqlStruct.cs" />
+    <Compile Include="Entity\TJ_PACKAGESECON_BaseDAO.cs" />
+    <Compile Include="Entity\TJ_PACKAGESECON_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\TJ_PACKAGESECON_SqlStruct.cs" />
+    <Compile Include="Entity\TJ_PACKAGE_BaseDAO.cs" />
+    <Compile Include="Entity\TJ_PACKAGE_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\TJ_PACKAGE_SqlStruct.cs" />
+    <Compile Include="Entity\TW_ANSWER_BaseDAO.cs" />
+    <Compile Include="Entity\TW_ANSWER_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\TW_ANSWER_SqlStruct.cs" />
+    <Compile Include="Entity\TW_QUESTION_BaseDAO.cs" />
+    <Compile Include="Entity\TW_QUESTION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\TW_QUESTION_SqlStruct.cs" />
+    <Compile Include="Entity\WJ_DICANSWER_BaseDAO.cs" />
+    <Compile Include="Entity\WJ_DICANSWER_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\WJ_DICANSWER_SqlStruct.cs" />
+    <Compile Include="Entity\WJ_DICQUESTION_BaseDAO.cs" />
+    <Compile Include="Entity\WJ_DICQUESTION_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\WJ_DICQUESTION_SqlStruct.cs" />
+    <Compile Include="Entity\WJ_DICTITLE_BaseDAO.cs" />
+    <Compile Include="Entity\WJ_DICTITLE_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\WJ_DICTITLE_SqlStruct.cs" />
+    <Compile Include="Entity\WJ_RECORD_BaseDAO.cs" />
+    <Compile Include="Entity\WJ_RECORD_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\WJ_RECORD_SqlStruct.cs" />
+    <Compile Include="Entity\XT_DICDEPART_BaseDAO.cs" />
+    <Compile Include="Entity\XT_DICDEPART_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\XT_DICDEPART_SqlStruct.cs" />
+    <Compile Include="Entity\XT_STAFF_BaseDAO.cs" />
+    <Compile Include="Entity\XT_STAFF_DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entity\XT_STAFF_SqlStruct.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="V_DICDEPART.CS">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entity\hyApp.ettp" />
+    <None Include="Entity\HYGHSF.ettp" />
+    <None Include="Entity\HYHISAPP.ettp" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
