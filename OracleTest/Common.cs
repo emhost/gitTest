@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq; 
 using System.Text;
-using System.Web; 
+using System.Web;
+using System.Windows.Forms; 
 
 namespace HYHISAPPS.Models.Util
 {
@@ -34,8 +35,8 @@ namespace HYHISAPPS.Models.Util
         }
 
         public void test()
-        { 
-        23
+        {
+            MessageBox.Show("sss");
         }
        
 
